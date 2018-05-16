@@ -25,7 +25,10 @@ f	&$\#$ &$\leftarrow$	 &$\#$			&$\#$			&$\leftarrow$		   &$\#$\\
 
 \begin{align*}
 X_L &= \{ (\{a\},\{b\}),(\{a\},\{c\})
-,(\{a\},\{e\}),(\{b\},\{d\}),(\{c\},\{d\}),(\{e\},\{f\}),(\{a,e\},\{f\}),(\{f\},\{d\}),(\{a,e\},\{f,d\}),(\{a,e,f\},\{d\}),(\{e\},\{h\}),(\{e,h\},\{d\}),(\{a,e,h\},\{d\}),(\{a,e,h,f\},\{d\}),(\{e\},\{g\}),(\{g\},\{d\}),(\{e,g\},\{d\}),(\{a,e,h\},\{d\}),(\{a,e,h,g\},\{d\}),(\{a,e,h,f\},\{d\}),(\{a,e,h,f,g\},\{d\})\}\\
+,(\{a\},\{e\}),(\{b\},\{d\}),(\{c\},\{d\}),(\{e\},\{f\}),\\
+&(\{a,e\},\{f\}),(\{f\},\{d\}),(\{a,e\},\{f,d\}),(\{a,e,f\},\{d\}),(\{e\},\{h\}),\\
+&(\{e,h\},\{d\}),(\{a,e,h\},\{d\}),(\{a,e,h,f\},\{d\}),(\{e\},\{g\}),(\{g\},\{d\}),\\
+&(\{e,g\},\{d\}),(\{a,e,h\},\{d\}),(\{a,e,h,g\},\{d\}),(\{a,e,h,f\},\{d\}),(\{a,e,h,f,g\},\{d\})\}\\
 Y_L &=
 \{(\{a\},\{b\}),(\{a\},\{c\}),(\{b\},\{d\}),(\{c\},\{d\}),(\{a,e,h,f,g\},\{f\}),(\{a,d\},\{b\})\}\\
 \end{align*}
@@ -71,6 +74,8 @@ Y_L &=
     	edge [post] (tob);
   \end{scope}
 \end{tikzpicture}
+
+This model is not sound, because you have an endless loop.
 
 \subsection*{2.}
 \begin{equation*}
@@ -160,7 +165,9 @@ Y_L &= \{(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{g,f,h\},\{d\})\}\\
   \end{scope}
 \end{tikzpicture}
 
-\subsection*{r.}
+This model is not sound, because you can get stuck before e.
+
+\subsection*{3.}
 \begin{equation*}
 L3= [\langle d,c,b,e,f\rangle ,\langle a,e,f\rangle,\langle d,b,b,c,ef\rangle
 ,\langle a,b,c,d,e,f\rangle ,\langle b,d,a,c,f\rangle]
@@ -186,7 +193,7 @@ f	&$\#$ 		  &$\#$			 &$\leftarrow$			&$\#$	&$\leftarrow$  &$\#$	\\
 \end{tabular}
 
 \begin{align*}
-X_L &= \{ (\{a\},c\}),(\{a\},\{e\})
+X_L &= \{ (\{a\},\{c\}),(\{a\},\{e\})
 ,(\{c\},\{e\}),(\{c\},\{f\}),(\{e\},\{f\}),(\{d\},\{a\}),(\{d\},\{e\})\}\\
 Y_L &= X_L\\
 \end{align*}
@@ -208,16 +215,20 @@ Y_L &= X_L\\
     	edge [pre] (start);
     \node [transition] (b) [above right of=start]       {b}
     	edge [pre] (start);
-    \node [place] (tode)  [right of=d]	   {}
+    \node [place] (tode)  [above right of=d]	   {}
+    	edge [pre] (d);
+    \node [place] (toda)  [right of=d]	   {}
     	edge [pre] (d)
     	edge [post] (a);
-    \node [place] (toae) [right of=a]        {}
+    \node [place] (toae) [below of=toda]        {}
+    	edge [pre] (a);
+    \node [place] (toac) [below of=toae]        {}
     	edge [pre] (a);
     \node [transition] (e) [right of=tode]    {e}
     	edge [pre] (tode)
     	edge [pre] (toae);
 	\node [transition] (c) [right of=toae]        {c}
-		edge [pre] (toae);
+		edge [pre] (toac);
     \node [place] (etof) [right of=e] {}
     	edge [pre] (e);
     \node [transition] (f) [right of=etof] {f}
@@ -225,10 +236,13 @@ Y_L &= X_L\\
     \node [place] (ctoe) [right of=c] {}
     	edge [pre] (c)
     	edge [post] (e);
-    \node [place] (tof) [below right of=c] {}
+    \node [place] (tof) [below  of=ctoe] {}
     	edge [pre] (c)
     	edge [post] (f);
     \node [place] (end) [right of=f] {}
     	edge [pre] (f);
   \end{scope}
 \end{tikzpicture}
+
+This one is not sound, because \textbf{b} always can fire and never will get in
+the end state.
