@@ -75,7 +75,7 @@ Y_L &=
   \end{scope}
 \end{tikzpicture}
 
-This model is not sound, because you have an endless loop.
+This model is sound, because it is bounded and live.
 
 \subsection*{2.}
 \begin{equation*}
@@ -112,10 +112,15 @@ h	&$\#$ 		  &$\#$			 &$\#$			&$\rightarrow$	&$\leftarrow$  &$\#$		&$\#$
 
 \begin{align*}
 X_L &= \{ (\{a\},\{b\}),(\{a\},\{c\})
-,(\{a\},\{e\}),(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{b\},\{c\}),(\{b\},d\}),(\{c\},\{b\}),\\
-&(\{c\},\{d\}),(\{e\},\{f\}),(\{e\},\{g\}),(\{e\},\{h\}),(\{g\},\{d\}),(\{h\},\{d\}),(\{f\},\{d\}),\\
-&(\{g,h\},\{d\}),(\{g,f\},\{d\}),(\{h,f\},\{d\}),(\{g,f,h\},\{d\})\}\\
-Y_L &= \{(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{g,f,h\},\{d\})\}\\
+,(\{a\},\{e\}),(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{b\},d\}),\\
+&(\{c\},\{d\}),(\{e\},\{f\}),(\{e\},\{g\}),(\{e\},\{h\}),(\{e\},\{f,g\}),(\{e\},\{f,h\}),(\{e\},\{g,h\}),(\{e\},\{f,g,h\}),\\
+&(\{g\},\{d\}),(\{h\},\{d\}),(\{f\},\{d\}),\\
+&(\{g,h\},\{d\}),(\{g,f\},\{d\}),(\{h,f\},\{d\}),(\{g,f,h\},\{d\}),\\
+&(\{g,b\},\{d\}),(\{g,c\},\{d\}),(\{h,b\},\{d\}),(\{h,c\},\{d\}),(\{f,b\},\{d\}),(\{f,c\},\{d\}),\\
+&(\{g,f,b\},\{d\})\},(\{g,f,c\},\{d\}),(\{g,b,h\},\{d\}),(\{g,c,h\},\{d\}),(b,f,h\},\{d\}),(\{c,f,h\},\{d\}),\\
+&(\{g,f,h,b\},\{d\}),(\{g,f,h,c\},\{d\})\}\\
+Y_L &=
+\{(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{e\},\{f,g,h\}),(\{g,f,h,b\},\{d\}),(\{g,f,h,c\},\{d\})\}\\
 \end{align*}
 
 \begin{tikzpicture}[node distance=1.3cm,>=stealth',bend angle=45,auto]
@@ -152,21 +157,26 @@ Y_L &= \{(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{g,f,h\},\{d\})\}\\
     	edge [pre] (etofgh);
     \node [transition] (h) [below of=g] {h}
     	edge [pre] (etofgh);
-    \node [place] (tod) [above right of=f] {}
+    \node [place] (todb) [above right of=f] {}
     	edge [pre] (b)
+    	edge [pre] (g)
+    	edge [pre] (h)
+    	edge [pre] (f);
+    \node [place] (todc) [above of=todb] {}
     	edge [pre] (c)
     	edge [pre] (g)
     	edge [pre] (h)
     	edge [pre] (f);
-    \node [transition] (d) [right of=tod] {d}
-    	edge [pre] (tod);	
+    \node [transition] (d) [right of=todb] {d}
+    	edge [pre] (todb)
+    	edge [pre] (todc);	
     \node [place] (end) [right of=d] {}
     	edge [pre] (d);
   \end{scope}
 \end{tikzpicture}
 
-This model is not sound, because you can get stuck before e.
-
+This one is sound, because it is bounded and live. If you try every possible
+trace you see that easily.
 \subsection*{3.}
 \begin{equation*}
 L3= [\langle d,c,b,e,f\rangle ,\langle a,e,f\rangle,\langle d,b,b,c,ef\rangle
@@ -244,5 +254,5 @@ Y_L &= X_L\\
   \end{scope}
 \end{tikzpicture}
 
-This one is not sound, because \textbf{b} always can fire and never will get in
-the end state.
+
+It is not live, because it is never possible to fire a, so it is neither sound.
