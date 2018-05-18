@@ -1,14 +1,21 @@
 \section*{Question 5}
 \subsection*{a)}
-The process has 15370 cases and 561470 events. Median number of events is 5 (and
-average number The average duration is 48.8 weeks.
+% How many process instances and events are in this event log? What is the median
+% number of events in each trace and what is the average duration of them?
+The process has 150370 cases and 561470 events. Median number of events is 5.
+The average duration is 48.8 weeks.
 
 \subsection*{b)}
+% What will be the Disco process model for this event log when you set Activities
+% slider to 80% and Paths slider to 10%? Interpret the (self-loop) edge from
+% “Payment” to itself. How many times and for how many process instances this
+% behavior happens?
 
 \includegraphics[width=0.8\textwidth]{Question5b.jpg}
 
 The loop tells us, that a part of all people had to pay at least two times. If
 you check the log data, you can see, that mostly it happens in the next 30 days.
+Maybe they had a plan how to pay over a few weeks or had to pay penaltys.
 
 It happen 4306 and for 4014 cases. So there are cases, where it happens more
 than one time. You also can see, that it happens at most 14 times.
@@ -21,17 +28,24 @@ than one time. You also can see, that it happens at most 14 times.
 \includegraphics[width=0.8\textwidth]{Question5cDist.jpg}
 
 You can see that the distribution is going up and down a little bit, but there
-are 10 laces to see where more happens. Further in the end activity gets lower
-and the distance between the 6th and 7th lace is higher than between the others.
+are 10 peaks to see where more happens. In the end activity gets
+lower and the distance between the 6th and 7th peak is higher than between the
+others.
 It is always around the typical paydays, so probably a lot of people then have
 the money to pay the fine.
+
+The peakes are on:
+06.04.2002 (Sa), 06.01.2003 (Mo), 05.01.2004 (Mo), 24.12.2004 (Fr), 20.02.2006 (Mo),
+18.02.2007 (Su), 27.03.2009 (Fr), 08.10.2010 (Fr), 22.03.2012 (Thu), 19.04.2013
+(Fr)
 
 \subsection*{d)}
 % How many variants are in this event log? What is the size (number of process
 % instances) of the third most frequent variant? Also, explain what happens in this
 % variant (report the sequence of activities).
 There are 231 variants. The third most frequent variant has 20385 instances. It
-just contains the behaviour create and send fine. Nothing more happens there.
+just contains the behaviour \textbf{create} and \textbf{send fine}. Nothing more
+happens there.
 
 \subsection*{e)}
 % Filter the event log using Disco while keeping 50% of the most common variants of

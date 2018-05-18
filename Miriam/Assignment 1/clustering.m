@@ -10,7 +10,7 @@ c3 = [30000, 4, 26];
 
 change = 100000;
 k = 0;
-while change > 10^-15
+while k < 3
     clust1x = [];
     clust1y = [];
     clust1z = [];
@@ -49,14 +49,14 @@ while change > 10^-15
     c2 = c2new;
     c3 = c3new;
     k = k + 1;
-    namen = {'distance_to_cluster_1','distance_to_cluster_2','distance_to_cluster_3'};
-    T = table(distc1',distc2',distc3','VariableNames',namen);
-    filename = 'Question1.xlsx';
-    writetable(T,filename,'Sheet',k,'Range','A1')
-    namen2 = {'centroid_1','centroid_2','centroid_3'};
-    T = table(c1',c2',c3','VariableNames',namen2);
-    filename = 'Question1centroids.xlsx';
-    writetable(T,filename,'Sheet',k,'Range','A1')
+%     namen = {'distance_to_cluster_1','distance_to_cluster_2','distance_to_cluster_3'};
+%     T = table(distc1',distc2',distc3','VariableNames',namen);
+%     filename = 'Question1.xlsx';
+%     writetable(T,filename,'Sheet',k,'Range','A1')
+%     namen2 = {'centroid_1','centroid_2','centroid_3'};
+%     T = table(c1',c2',c3','VariableNames',namen2);
+%     filename = 'Question1centroids.xlsx';
+%     writetable(T,filename,'Sheet',k,'Range','A1')
 end
 c1
 c2
@@ -64,16 +64,16 @@ c3
 
 k
 
-namen3 = {'amount_req','case_duration','total_activities'};
-T = table(clust1x',clust1y',clust1z','VariableNames',namen3);
-filename = 'Question1cluster1.xlsx';
-writetable(T,filename,'Sheet',1,'Range','A1')
-
-namen4 = {'amount_req','case_duration','total_activities'};
-T = table(clust2x',clust2y',clust2z','VariableNames',namen4);
-filename = 'Question1cluster2.xlsx';
-writetable(T,filename,'Sheet',1,'Range','A1')
-namen5 = {'amount_req','case_duration','total_activities'};
-T = table(clust3x',clust3y',clust3z','VariableNames',namen5);
-filename = 'Question1cluster3.xlsx';
-writetable(T,filename,'Sheet',1,'Range','A1')
+% namen3 = {'amount_req','case_duration','total_activities'};
+% T = table(clust1x',clust1y',clust1z','VariableNames',namen3);
+% filename = 'Question1cluster1.xlsx';
+% writetable(T,filename,'Sheet',1,'Range','A1')
+% 
+% namen4 = {'amount_req','case_duration','total_activities'};
+% T = table(clust2x',clust2y',clust2z','VariableNames',namen4);
+% filename = 'Question1cluster2.xlsx';
+% writetable(T,filename,'Sheet',1,'Range','A1')
+% namen5 = {'amount_req','case_duration','total_activities'};
+% T = table(clust3x',clust3y',clust3z','VariableNames',namen5);
+% filename = 'Question1cluster3.xlsx';
+% writetable(T,filename,'Sheet',1,'Range','A1')
