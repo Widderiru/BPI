@@ -72,7 +72,19 @@ Y_L &=
   \end{scope}
 \end{tikzpicture}
 
-This model is sound, because it is bounded and live.
+This network is sound because:
+\begin{enumerate}
+	\item \textbf{safeness}, places cannot hold multiple tokens at the same time.\\
+	\item \textbf{proper completion}, if the sink place is marked, all other places
+	are empty\\
+	\item \textbf{option to complete}, it is always possible to reach the marking
+	that marks just the sink place\\
+	\item \textbf{absence of dead parts}, for any transition
+	there is a firing sequence enabling it.
+\end{enumerate}
+All propertieres are fullfilled and can be checked by going through the network
+in all possible variations
+
 
 \subsection*{2.}
 \begin{equation*}
@@ -172,8 +184,19 @@ Y_L &=
   \end{scope}
 \end{tikzpicture}
 
-This one is sound, because it is bounded and live. If you try every possible
-trace you see that easily.
+This network is sound because:
+\begin{enumerate}
+	\item \textbf{safeness}, places cannot hold multiple tokens at the same time.\\
+	\item \textbf{proper completion}, if the sink place is marked, all other places
+	are empty\\
+	\item \textbf{option to complete}, it is always possible to reach the marking
+	that marks just the sink place\\
+	\item \textbf{absence of dead parts}, for any transition
+	there is a firing sequence enabling it.
+\end{enumerate}
+All propertieres are fullfilled and can be checked by going through the network
+in all possible variations
+
 \subsection*{3.}
 \begin{equation*}
 L3= [\langle d,c,b,e,f\rangle ,\langle a,e,f\rangle,\langle d,b,b,c,ef\rangle
@@ -252,4 +275,16 @@ Y_L &= X_L\\
 \end{tikzpicture}
 
 
-It is not live, because it is never possible to fire a, so it is neither sound.
+This network is not sound because:
+\begin{enumerate}
+	\item \textbf{safeness}, places cannot hold multiple tokens at the same time.
+	That is true\\
+	\item \textbf{proper completion}, if the sink place is marked, all other places
+	are empty. This is true following the definition.\\
+	\item \textbf{option to complete}, it is always possible to reach the marking
+	that marks just the sink place. This is not true, because a never can be
+	reached, since therefore start and d would have to fire. So it is not
+	possible to enable e and than also not to reach the sink place.\\
+	\item \textbf{absence of dead parts}, for any transition
+	there is a firing sequence enabling it. Same reason than above.
+\end{enumerate}
