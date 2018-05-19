@@ -60,11 +60,9 @@ Y_L &=
     	edge [pre] (etof);
     \node [place] (end) [right of=f] {}
     	edge [pre] (f);
-    \node [place] (btoc) [below right of=b] {}
-    	edge [pre] (b);
-    \node [transition] (c) [below right of=btoc] {c}
-    	edge [pre] (btoc);
-    \node [place] (ctod) [below of=b] {}
+    \node [transition] (c) [below of=b] {c}
+    	edge [pre] (btof);
+    \node [place] (ctod) [left of=c] {}
     	edge [pre] (c);
     \node [transition] (d) [below of=a] {d}
     	edge [pre] (ctod)
