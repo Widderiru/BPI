@@ -6,25 +6,6 @@
 \usepackage[german]{babel}%some specifics of the german language
 \usepackage{amsfonts, amsmath, amsthm, amssymb, mathabx, paralist}
 \setlength{\parindent}{0em} 
-\usepackage{listings}
-\usepackage{longtable}
-\usepackage{pdfpages}
- \lstset{language=Matlab,%
-    %basicstyle=\color{red},
-    breaklines=true,%
-    morekeywords={matlab2tikz},
-    keywordstyle=\color{blue},%
-    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
-    identifierstyle=\color{black},%
-    stringstyle=\color{mylilas},
-    commentstyle=\color{mygreen},%
-    showstringspaces=false,%without this there will be a symbol in the places where there is a space
-    numbers=left,%
-    numberstyle={\tiny \color{black}},% size of the numbers
-    numbersep=9pt, % this defines how far the numbers are from the text
-    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
-    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
-}
 
  %Decisiontree
  \usepackage{tikz,forest}
@@ -36,22 +17,18 @@
 
 \usepackage{verbatim}%fï¿½r txt datei
 
-\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-
 \title{Homework 1}
 \author{ Miriam Wagner\\373045}
 \begin{document}
 \maketitle
 
-
+ 	
 %\mainmatter
-\include{Question1}
+\input{Question1}
 \include{Question2}
-\include{Question3}
-\include{Question4}
-\include{Question5}
+\input{Question3}
+\input{Question4}
+\input{Question5}
 
 
 \end{document}
