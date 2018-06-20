@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  20 JUN 2018 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  20 JUN 2018 11:32
 entering extended mode
 **"C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
 ("C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
@@ -1370,13 +1370,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 ("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (Introduction.tex) (ProcessModels.tex) [1
+) (Introduction.tex) (ProcessModels.tex) (Questions.tex) (Conclusion.tex) [1
 
 {C:/Users/Miriam Wagner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (As
 signment2.aux) ) 
 Here is how much of TeX's memory you used:
- 34265 strings out of 493305
- 788845 string characters out of 3126321
+ 34271 strings out of 493305
+ 789004 string characters out of 3126321
  796851 words of memory out of 3000000
  37375 multiletter control sequences out of 15000+200000
  544738 words of font info for 57 fonts, out of 3000000 for 9000
@@ -1389,9 +1389,9 @@ pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\User
 s\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
 m1200.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
 ppen\ec\dpi600\ecrm1728.pk>
-Output written on Assignment2.pdf (1 page, 28115 bytes).
+Output written on Assignment2.pdf (1 page, 29172 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
