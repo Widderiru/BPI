@@ -1,0 +1,288 @@
+\section*{Question 4}
+\subsection*{1.}
+\begin{equation*}
+L1= [\langle a,b,e,f\rangle ,\langle a,b,e,c,d,b,f\rangle ,\langle a,b,c,e,d,b
+,f\rangle ,\langle a,b,c,d,e,b,f\rangle ,\langle a,e,b,c,d,b,f\rangle ]
+\end{equation*}
+The $\alpha-$Algorithm gives the following:
+
+\begin{align*}
+T_L &= \{ a,b,c,d,e,f\}\\
+T_I &= \{a\}\\
+T_O &= \{f\}
+\end{align*}
+\begin{tabular}{c | c c c c c c}
+	&a 	  			&b 			 &c 			&d 	  			&e 			   &f\\
+	\hline
+a	&$\#$ &$\rightarrow$ &$\#$ 			&$\#$ 			&$\rightarrow$ &$\#$\\
+b	&$\leftarrow$ &$\#$			 &$\rightarrow$ &$\leftarrow$ 			&$||$ 		  
+&$\rightarrow$\\
+c	&$\#$ &$\leftarrow$			 &$\#$			&$\rightarrow$  &$||$ 		   &$\#$\\
+d	&$\#$ &$\rightarrow$ &$\leftarrow$			&$\#$			&$||$ 		   &$\#$\\
+e	&$\leftarrow$ &$||$ 		 &$||$			&$||$  			&$\#$		   &$\rightarrow$\\
+f	&$\#$ &$\leftarrow$	 &$\#$			&$\#$			&$\leftarrow$		   &$\#$\\
+\end{tabular}
+
+\begin{align*}
+X_L &= \{
+(\{a\},\{b\}),(\{a\},\{e\}),(\{b\},\{c\}),(\{b\},\{f\}),(\{b\},\{f,c\}),(\{c\},\{d\}),(\{d\},\{b\}),(\{e\},\{f\}),\\
+Y_L &=
+\{(\{a\},\{b\}),(\{a\},\{e\}),(\{d\},\{b\}),(\{c\},\{d\}),(\{b\},\{f,c\})\}\\
+\end{align*}
+
+\begin{tikzpicture}[node distance=1.3cm,>=stealth',bend angle=45,auto]
+
+  \tikzstyle{place}=[circle,thick,draw=blue!75,fill=blue!20,minimum size=6mm]
+  \tikzstyle{transition}=[rectangle,thick,draw=black!75,
+  			  fill=black!20,minimum size=4mm]
+
+  \tikzstyle{every label}=[red]
+
+  \begin{scope}
+    % First net
+    \node [place,tokens=1] (start)                {};
+    \node [transition] (a) [right of=start]       {a}
+    	edge [pre] (start);
+    \node [place] (toe)  [above right of=a]	  	  {}
+    	edge [pre] (a);
+    \node [place] (tob) [right of=a]        {}
+    	edge [pre] (a);
+    \node [transition] (e) [right of=toe]         {e}
+    	edge [pre] (toe);
+	\node [transition] (b) [right of=tob]         {b}
+		edge [pre] (tob);
+    \node [place] (etof) [right of=e] {}
+    	edge [pre] (e);
+    \node [place] (btof) [right of=b] {}
+    	edge [pre] (b);
+    \node [transition] (f) [right of=etof] {f}
+    	edge [pre] (btof)
+    	edge [pre] (etof);
+    \node [place] (end) [right of=f] {}
+    	edge [pre] (f);
+    \node [transition] (c) [below of=b] {c}
+    	edge [pre] (btof);
+    \node [place] (ctod) [left of=c] {}
+    	edge [pre] (c);
+    \node [transition] (d) [below of=a] {d}
+    	edge [pre] (ctod)
+    	edge [post] (tob);
+  \end{scope}
+\end{tikzpicture}
+
+This network is sound because:
+\begin{enumerate}
+	\item \textbf{safeness}, places cannot hold multiple tokens at the same time.\\
+	\item \textbf{proper completion}, if the sink place is marked, all other places
+	are empty\\
+	\item \textbf{option to complete}, it is always possible to reach the marking
+	that marks just the sink place\\
+	\item \textbf{absence of dead parts}, for any transition
+	there is a firing sequence enabling it.
+\end{enumerate}
+All propertieres are fullfilled and can be checked by going through the network
+in all possible variations
+
+
+\subsection*{2.}
+\begin{equation*}
+L2= [\langle a,b,c,d\rangle ,\langle a,c,b,d\rangle,\langle a,e,f,d\rangle
+,\langle a,e,g,d\rangle ,\langle a,e,h,d\rangle]
+\end{equation*}
+The $\alpha-$Algorithm gives the following:
+
+\begin{align*}
+T_L &= \{ a,b,c,d,e,f,g,h\}\\
+T_I &= \{a\}\\
+T_O &= \{d\}
+\end{align*}
+\begin{tabular}{c | c c c c c c c c}
+	&a 	  		  &b 			 &c 			&d 	  			&e 			   &f			&g			&h\\
+	\hline
+a	&$\#$ 		  &$\rightarrow$ &$\rightarrow$	&$\#$ 			&$\rightarrow$ &$\#$		&$\#$
+   	&$\#$\\
+b	&$\leftarrow$ &$\#$			 &$||$ 			&$\rightarrow$	&$\#$ 		   &$\#$		&$\#$	
+	&$\#$\\
+c	&$\leftarrow$ &$||$			 &$\#$			&$\rightarrow$  &$\#$ 		   &$\#$		&$\#$	
+	&$\#$\\
+d	&$\#$ 		  &$\leftarrow$  &$\leftarrow$	&$\#$			&$\#$ 		   &$\leftarrow$
+	&$\leftarrow$ &$\leftarrow$\\
+e	&$\leftarrow$ &$\#$ 		 &$\#$			&$\#$  			&$\#$		   &$\rightarrow$
+	&$\rightarrow$	&$\rightarrow$\\
+f	&$\#$ 		  &$\#$			 &$\#$			&$\rightarrow$	&$\leftarrow$  &$\#$		&$\#$     
+&$\#$\\
+g	&$\#$ 		  &$\#$			 &$\#$			&$\rightarrow$	&$\leftarrow$  &$\#$		&$\#$     
+&$\#$\\
+h	&$\#$ 		  &$\#$			 &$\#$			&$\rightarrow$	&$\leftarrow$  &$\#$		&$\#$     
+&$\#$\\
+\end{tabular}
+
+\begin{align*}
+X_L &= \{ (\{a\},\{b\}),(\{a\},\{c\})
+,(\{a\},\{e\}),(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{b\},\{d\}),\\
+&(\{c\},\{d\}),(\{e\},\{f\}),(\{e\},\{g\}),(\{e\},\{h\}),(\{e\},\{f,g\}),(\{e\},\{f,h\}),(\{e\},\{g,h\}),(\{e\},\{f,g,h\}),\\
+&(\{g\},\{d\}),(\{h\},\{d\}),(\{f\},\{d\}),\\
+&(\{g,h\},\{d\}),(\{g,f\},\{d\}),(\{h,f\},\{d\}),(\{g,f,h\},\{d\}),\\
+&(\{g,b\},\{d\}),(\{g,c\},\{d\}),(\{h,b\},\{d\}),(\{h,c\},\{d\}),(\{f,b\},\{d\}),(\{f,c\},\{d\}),\\
+&(\{g,f,b\},\{d\})\},(\{g,f,c\},\{d\}),(\{g,b,h\},\{d\}),(\{g,c,h\},\{d\}),(b,f,h\},\{d\}),(\{c,f,h\},\{d\}),\\
+&(\{g,f,h,b\},\{d\}),(\{g,f,h,c\},\{d\})\}\\
+Y_L &=
+\{(\{a\},\{b,e\}),(\{a\},\{c,e\}),(\{e\},\{f,g,h\}),(\{g,f,h,b\},\{d\}),(\{g,f,h,c\},\{d\})\}\\
+\end{align*}
+
+\begin{tikzpicture}[node distance=1.3cm,>=stealth',bend angle=45,auto]
+
+  \tikzstyle{place}=[circle,thick,draw=blue!75,fill=blue!20,minimum size=6mm]
+  \tikzstyle{transition}=[rectangle,thick,draw=black!75,
+  			  fill=black!20,minimum size=4mm]
+
+  \tikzstyle{every label}=[red]
+
+  \begin{scope}
+    % First net
+    \node [place,tokens=1] (start)                {};
+    \node [transition] (a) [right of=start]       {a}
+    	edge [pre] (start);
+    \node [place] (toeb)  [above right of=a]	   {}
+    	edge [pre] (a);
+    \node [place] (toec) [below right of=a]        {}
+    	edge [pre] (a);
+    \node [transition] (e) [below right of=toeb]    {e}
+    	edge [pre] (toec)
+    	edge [pre] (toeb);
+	\node [transition] (b) [above of=e]         {b}
+		edge [pre] (toeb);
+	\node [transition] (c) [above of=b]         {c}
+		edge [pre] (toec);
+    \node [place] (etofgh) [right of=e] {}
+    	edge [pre] (e);
+    \node [transition] (f) [right of=etofgh] {f}
+    	edge [pre] (etofgh);
+    \node [transition] (g) [below of=f] {g}
+    	edge [pre] (etofgh);
+    \node [transition] (h) [below of=g] {h}
+    	edge [pre] (etofgh);
+    \node [transition] (h) [below of=g] {h}
+    	edge [pre] (etofgh);
+    \node [place] (todb) [above right of=f] {}
+    	edge [pre] (b)
+    	edge [pre] (g)
+    	edge [pre] (h)
+    	edge [pre] (f);
+    \node [place] (todc) [above of=todb] {}
+    	edge [pre] (c)
+    	edge [pre] (g)
+    	edge [pre] (h)
+    	edge [pre] (f);
+    \node [transition] (d) [right of=todb] {d}
+    	edge [pre] (todb)
+    	edge [pre] (todc);	
+    \node [place] (end) [right of=d] {}
+    	edge [pre] (d);
+  \end{scope}
+\end{tikzpicture}
+
+This network is sound because:
+\begin{enumerate}
+	\item \textbf{safeness}, places cannot hold multiple tokens at the same time.\\
+	\item \textbf{proper completion}, if the sink place is marked, all other places
+	are empty\\
+	\item \textbf{option to complete}, it is always possible to reach the marking
+	that marks just the sink place\\
+	\item \textbf{absence of dead parts}, for any transition
+	there is a firing sequence enabling it.
+\end{enumerate}
+All propertieres are fullfilled and can be checked by going through the network
+in all possible variations
+
+\subsection*{3.}
+\begin{equation*}
+L3= [\langle d,c,b,e,f\rangle ,\langle a,e,f\rangle,\langle d,b,b,c,ef\rangle
+,\langle a,b,c,d,e,f\rangle ,\langle b,d,a,c,f\rangle]
+\end{equation*}
+The $\alpha-$Algorithm gives the following:
+
+\begin{align*}
+T_L &= \{ a,b,c,d,e,f\}\\
+T_I &= \{a,b,d\}\\
+T_O &= \{f\}
+\end{align*}
+\begin{tabular}{c | c c c c c c c c}
+	&a 	  		  &b 			 &c 			&d 	  			&e 			   &f	\\
+	\hline
+a	&$\#$ 		  &$\rightarrow$ &$\rightarrow$	&$\leftarrow$ 	&$\rightarrow$ &$\#$\\
+b	&$\leftarrow$ &$||$			 &$||$ 			&$||$			&$\rightarrow$ &$\#$	\\
+c	&$\leftarrow$ &$||$			 &$\#$			&$\||$  &$\rightarrow$ &$\rightarrow$\\
+d	&$\rightarrow$&$||$  		 &$||$			&$\#$			&$\rightarrow$ &$\#$\\
+e	&$\leftarrow$ &$\leftarrow$	 &$\leftarrow$	&$\leftarrow$	&$\#$
+&$\rightarrow$\\
+f	&$\#$ 		  &$\#$			 &$\leftarrow$			&$\#$	&$\leftarrow$  &$\#$	\\ 
+\end{tabular}
+
+
+\begin{align*}
+X_L &= \{ (\{a\},\{c\}),(\{a\},\{e\})
+,(\{c\},\{e\}),(\{c\},\{f\}),(\{e\},\{f\}),(\{d\},\{a\}),(\{d\},\{e\})\}\\
+Y_L &= X_L\\
+\end{align*}
+
+\begin{tikzpicture}[node distance=1.3cm,>=stealth',bend angle=45,auto]
+
+  \tikzstyle{place}=[circle,thick,draw=blue!75,fill=blue!20,minimum size=6mm]
+  \tikzstyle{transition}=[rectangle,thick,draw=black!75,
+  			  fill=black!20,minimum size=4mm]
+
+  \tikzstyle{every label}=[red]
+
+  \begin{scope}
+    % First net
+    \node [place,tokens=1] (start)                {};
+    \node [transition] (a) [below right of=start]       {a}
+    	edge [pre] (start);
+    \node [transition] (d) [right of=start]       {d}
+    	edge [pre] (start);
+    \node [transition] (b) [above right of=start]       {b}
+    	edge [pre] (start);
+    \node [place] (tode)  [above right of=d]	   {}
+    	edge [pre] (d);
+    \node [place] (toda)  [right of=d]	   {}
+    	edge [pre] (d)
+    	edge [post] (a);
+    \node [place] (toae) [below of=toda]        {}
+    	edge [pre] (a);
+    \node [place] (toac) [below of=toae]        {}
+    	edge [pre] (a);
+    \node [transition] (e) [right of=tode]    {e}
+    	edge [pre] (tode)
+    	edge [pre] (toae);
+	\node [transition] (c) [right of=toae]        {c}
+		edge [pre] (toac);
+    \node [place] (etof) [right of=e] {}
+    	edge [pre] (e);
+    \node [transition] (f) [right of=etof] {f}
+    	edge [pre] (etof);
+    \node [place] (ctoe) [right of=c] {}
+    	edge [pre] (c)
+    	edge [post] (e);
+    \node [place] (tof) [below  of=ctoe] {}
+    	edge [pre] (c)
+    	edge [post] (f);
+    \node [place] (end) [right of=f] {}
+    	edge [pre] (f);
+  \end{scope}
+\end{tikzpicture}
+
+
+This network is not sound because:
+\begin{enumerate}
+	\item \textbf{safeness}, places cannot hold multiple tokens at the same time.
+	That is true\\
+	\item \textbf{proper completion}, if the sink place is marked, all other places
+	are empty. This is true following the definition.\\
+	\item \textbf{option to complete}, it is always possible to reach the marking
+	that marks just the sink place. This is not true, because a never can be
+	reached, since therefore start and d would have to fire. So it is not
+	possible to enable e and than also not to reach the sink place.\\
+	\item \textbf{absence of dead parts}, for any transition
+	there is a firing sequence enabling it. Same reason than above.
+\end{enumerate}
