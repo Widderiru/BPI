@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  20 JUN 2018 11:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  27 JUN 2018 19:52
 entering extended mode
 **"C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
 ("C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
@@ -1259,41 +1259,69 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowwidth=\dimen266
 \pgfarrowlinewidth=\dimen267
 )
+("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ca
+ption.sty"
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ca
+ption3.sty"
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen268
+\captionmargin@=\dimen269
+\captionwidth=\dimen270
+\caption@tempdima=\dimen271
+\caption@indent=\dimen272
+\caption@parindent=\dimen273
+\caption@hangindent=\dimen274
+)
+\c@ContinuedFloat=\count310
+)
+("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\su
+bcaption.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count311
+\c@subtable=\count312
+)
 ("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verb
 atim.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks56
 \verbatim@line=\toks57
 \verbatim@in@stream=\read4
-) (Assignment2.aux)
+) (Assignment2.aux
+
+LaTeX Warning: Label `fig:App_Prec' multiply defined.
+
+)
 \openout1 = `Assignment2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
  ABD: EveryShipout initializing macros
 ("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\sup
 p-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen268
+\scratchcounter=\count313
+\scratchdimen=\dimen275
 \scratchbox=\box78
-\nofMPsegments=\count311
-\nofMParguments=\count312
+\nofMPsegments=\count314
+\nofMParguments=\count315
 \everyMPshowfont=\toks58
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen269
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen276
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
 \everyMPtoPDFconversion=\toks59
 )
 ("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\e
@@ -1359,39 +1387,230 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 25.
 
 ("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\u
 msa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 25.
 
 ("C:\Users\Miriam Wagner\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\u
 msb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (Introduction.tex) (ProcessModels.tex) (Questions.tex) (Conclusion.tex) [1
+) (Introduction.tex) (ProcessModels.tex
+<App_DirectlyFollowedFreq0.PNG, id=4, 808.01875pt x 431.6125pt>
+File: App_DirectlyFollowedFreq0.PNG Graphic file (type png)
+<use App_DirectlyFollowedFreq0.PNG>
+Package pdftex.def Info: App_DirectlyFollowedFreq0.PNG  used on input line 16.
+(pdftex.def)             Requested size: 169.0519pt x 90.29883pt.
+<App_DirectlyFollowedFreq0-051.PNG, id=6, 946.53625pt x 459.21562pt>
+File: App_DirectlyFollowedFreq0-051.PNG Graphic file (type png)
+<use App_DirectlyFollowedFreq0-051.PNG>
+Package pdftex.def Info: App_DirectlyFollowedFreq0-051.PNG  used on input line 
+22.
+(pdftex.def)             Requested size: 169.0519pt x 82.01059pt.
 
-{C:/Users/Miriam Wagner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (As
-signment2.aux) ) 
+Underfull \hbox (badness 1337) in paragraph at lines 23--23
+[]\T1/cmr/m/n/9 (b) |Di-rectly fol-lowed graph 0.051 fre-
+ []
+
+<App_DirectlyFollowedFreq0-1.PNG, id=7, 948.04187pt x 472.26437pt>
+File: App_DirectlyFollowedFreq0-1.PNG Graphic file (type png)
+<use App_DirectlyFollowedFreq0-1.PNG>
+Package pdftex.def Info: App_DirectlyFollowedFreq0-1.PNG  used on input line 28
+.
+(pdftex.def)             Requested size: 169.0519pt x 84.21123pt.
+<App_DirectlyFollowedFreq0-2.PNG, id=8, 951.05313pt x 465.74pt>
+File: App_DirectlyFollowedFreq0-2.PNG Graphic file (type png)
+<use App_DirectlyFollowedFreq0-2.PNG>
+Package pdftex.def Info: App_DirectlyFollowedFreq0-2.PNG  used on input line 34
+.
+(pdftex.def)             Requested size: 169.0519pt x 82.7849pt.
+[1
+
+{C:/Users/Miriam Wagner/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./A
+pp_DirectlyFollowedFreq0.PNG> <./App_DirectlyFollowedFreq0-051.PNG> <./App_Dire
+ctlyFollowedFreq0-1.PNG> <./App_DirectlyFollowedFreq0-2.PNG>]
+<App_Conformance0-051.PNG, id=23, 198.24063pt x 100.375pt>
+File: App_Conformance0-051.PNG Graphic file (type png)
+<use App_Conformance0-051.PNG>
+Package pdftex.def Info: App_Conformance0-051.PNG  used on input line 48.
+(pdftex.def)             Requested size: 103.50105pt x 52.40665pt.
+<App_Conformance0-1.PNG, id=24, 200.24812pt x 103.88812pt>
+File: App_Conformance0-1.PNG Graphic file (type png)
+<use App_Conformance0-1.PNG>
+Package pdftex.def Info: App_Conformance0-1.PNG  used on input line 54.
+(pdftex.def)             Requested size: 103.50105pt x 53.69716pt.
+<App_Conformance0-2.PNG, id=25, 200.75pt x 99.37125pt>
+File: App_Conformance0-2.PNG Graphic file (type png)
+<use App_Conformance0-2.PNG>
+Package pdftex.def Info: App_Conformance0-2.PNG  used on input line 60.
+(pdftex.def)             Requested size: 103.50105pt x 51.23361pt.
+<App_Precision0-051.PNG, id=26, 273.02pt x 107.90312pt>
+File: App_Precision0-051.PNG Graphic file (type png)
+<use App_Precision0-051.PNG>
+Package pdftex.def Info: App_Precision0-051.PNG  used on input line 77.
+(pdftex.def)             Requested size: 169.0519pt x 66.81361pt.
+<App_Precision0-1.PNG, id=27, 273.52188pt x 109.40875pt>
+File: App_Precision0-1.PNG Graphic file (type png)
+<use App_Precision0-1.PNG>
+Package pdftex.def Info: App_Precision0-1.PNG  used on input line 83.
+(pdftex.def)             Requested size: 169.0519pt x 67.62068pt.
+<App_Conformance0-076.PNG, id=28, 198.24063pt x 98.3675pt>
+File: App_Conformance0-076.PNG Graphic file (type png)
+<use App_Conformance0-076.PNG>
+Package pdftex.def Info: App_Conformance0-076.PNG  used on input line 98.
+(pdftex.def)             Requested size: 169.0519pt x 83.88591pt.
+<App_Precision0-076.PNG, id=29, 169.13188pt x 110.91437pt>
+File: App_Precision0-076.PNG Graphic file (type png)
+<use App_Precision0-076.PNG>
+Package pdftex.def Info: App_Precision0-076.PNG  used on input line 104.
+(pdftex.def)             Requested size: 169.0519pt x 110.86499pt.
+<App_DirectlyFollowedFreq0-076.PNG, id=30, 714.67pt x 433.62pt>
+File: App_DirectlyFollowedFreq0-076.PNG Graphic file (type png)
+<use App_DirectlyFollowedFreq0-076.PNG>
+Package pdftex.def Info: App_DirectlyFollowedFreq0-076.PNG  used on input line 
+110.
+(pdftex.def)             Requested size: 345.0pt x 209.3262pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<P_DirectlyFollowedFreq0.PNG, id=31, 808.52063pt x 432.61626pt>
+File: P_DirectlyFollowedFreq0.PNG Graphic file (type png)
+<use P_DirectlyFollowedFreq0.PNG>
+Package pdftex.def Info: P_DirectlyFollowedFreq0.PNG  used on input line 130.
+(pdftex.def)             Requested size: 169.0519pt x 90.44942pt.
+<P_DirectlyFollowedFreq0-051.PNG, id=32, 717.17938pt x 433.62pt>
+File: P_DirectlyFollowedFreq0-051.PNG Graphic file (type png)
+<use P_DirectlyFollowedFreq0-051.PNG>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-051.PNG  used on input line 13
+6.
+(pdftex.def)             Requested size: 169.0519pt x 102.21169pt.
+
+Underfull \hbox (badness 1337) in paragraph at lines 137--137
+[]\T1/cmr/m/n/9 (b) |Di-rectly fol-lowed graph 0.051 fre-
+ []
+
+<P_DirectlyFollowedFreq0-1.PNG, id=33, 685.05937pt x 430.60875pt>
+File: P_DirectlyFollowedFreq0-1.PNG Graphic file (type png)
+<use P_DirectlyFollowedFreq0-1.PNG>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-1.PNG  used on input line 142.
+
+(pdftex.def)             Requested size: 169.0519pt x 106.25896pt.
+<P_DirectlyFollowedFreq0-126.PNG, id=34, 696.6025pt x 434.62375pt>
+File: P_DirectlyFollowedFreq0-126.PNG Graphic file (type png)
+<use P_DirectlyFollowedFreq0-126.PNG>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-126.PNG  used on input line 14
+8.
+(pdftex.def)             Requested size: 169.0519pt x 105.4724pt.
+
+Underfull \hbox (badness 1337) in paragraph at lines 149--149
+[]\T1/cmr/m/n/9 (d) |Di-rectly fol-lowed graph 0.126 fre-
+ []
+
+[2 <./App_Conformance0-051.PNG> <./App_Conformance0-1.PNG> <./App_Conformance0-
+2.PNG> <./App_Precision0-051.PNG> <./App_Precision0-1.PNG>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<P_Conformance0-051.PNG, id=43, 199.24437pt x 98.86937pt>
+File: P_Conformance0-051.PNG Graphic file (type png)
+<use P_Conformance0-051.PNG>
+Package pdftex.def Info: P_Conformance0-051.PNG  used on input line 162.
+(pdftex.def)             Requested size: 172.5pt x 85.60228pt.
+<P_Conformance0-1.PNG, id=44, 196.23312pt x 96.86188pt>
+File: P_Conformance0-1.PNG Graphic file (type png)
+<use P_Conformance0-1.PNG>
+Package pdftex.def Info: P_Conformance0-1.PNG  used on input line 168.
+(pdftex.def)             Requested size: 172.5pt x 85.15297pt.
+<P_Precision0-051.PNG, id=45, 270.00874pt x 96.86188pt>
+File: P_Precision0-051.PNG Graphic file (type png)
+<use P_Precision0-051.PNG>
+Package pdftex.def Info: P_Precision0-051.PNG  used on input line 174.
+(pdftex.def)             Requested size: 169.0519pt x 60.6464pt.
+<P_Precision0-1.PNG, id=46, 222.33063pt x 87.32625pt>
+File: P_Precision0-1.PNG Graphic file (type png)
+<use P_Precision0-1.PNG>
+Package pdftex.def Info: P_Precision0-1.PNG  used on input line 180.
+(pdftex.def)             Requested size: 169.0519pt x 66.39928pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<P_DirectlyFollowedFreq0-025.PNG, id=47, 712.6625pt x 433.11812pt>
+File: P_DirectlyFollowedFreq0-025.PNG Graphic file (type png)
+<use P_DirectlyFollowedFreq0-025.PNG>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-025.PNG  used on input line 19
+5.
+(pdftex.def)             Requested size: 169.0519pt x 102.74104pt.
+<P_DirectlyFollowedFreq0-08.PNG, id=48, 680.5425pt x 434.12187pt>
+File: P_DirectlyFollowedFreq0-08.PNG Graphic file (type png)
+<use P_DirectlyFollowedFreq0-08.PNG>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-08.PNG  used on input line 201
+.
+(pdftex.def)             Requested size: 169.0519pt x 107.83466pt.
+
+Underfull \hbox (badness 1337) in paragraph at lines 202--202
+[]\T1/cmr/m/n/9 (b) |Di-rectly fol-lowed graph 0.051 fre-
+ []
+
+<P_Conformance0-08.PNG, id=49, 200.24812pt x 96.36pt>
+File: P_Conformance0-08.PNG Graphic file (type png)
+<use P_Conformance0-08.PNG>
+Package pdftex.def Info: P_Conformance0-08.PNG  used on input line 207.
+(pdftex.def)             Requested size: 172.5pt x 83.01205pt.
+<P_Conformance0-025.PNG, id=50, 196.735pt x 97.86563pt>
+File: P_Conformance0-025.PNG Graphic file (type png)
+<use P_Conformance0-025.PNG>
+Package pdftex.def Info: P_Conformance0-025.PNG  used on input line 213.
+(pdftex.def)             Requested size: 172.5pt x 85.80989pt.
+<P_Precision0-08.PNG, id=51, 272.51813pt x 106.3975pt>
+File: P_Precision0-08.PNG Graphic file (type png)
+<use P_Precision0-08.PNG>
+Package pdftex.def Info: P_Precision0-08.PNG  used on input line 219.
+(pdftex.def)             Requested size: 169.0519pt x 66.00148pt.
+<P_Precision0-025.PNG, id=52, 272.51813pt x 106.3975pt>
+File: P_Precision0-025.PNG Graphic file (type png)
+<use P_Precision0-025.PNG>
+Package pdftex.def Info: P_Precision0-025.PNG  used on input line 225.
+(pdftex.def)             Requested size: 169.0519pt x 66.00148pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./App_Conformance0-076.PNG> <./App_Precision0-076.PNG> <./App_DirectlyFollo
+wedFreq0-076.PNG>]) (Questions.tex) (Conclusion.tex) [4 <./P_DirectlyFollowedFr
+eq0.PNG> <./P_DirectlyFollowedFreq0-051.PNG> <./P_DirectlyFollowedFreq0-1.PNG> 
+<./P_DirectlyFollowedFreq0-126.PNG>] [5 <./P_Conformance0-051.PNG> <./P_Conform
+ance0-1.PNG> <./P_Precision0-051.PNG> <./P_Precision0-1.PNG>] [6 <./P_DirectlyF
+ollowedFreq0-025.PNG> <./P_DirectlyFollowedFreq0-08.PNG> <./P_Conformance0-08.P
+NG> <./P_Conformance0-025.PNG> <./P_Precision0-08.PNG> <./P_Precision0-025.PNG>
+] (Assignment2.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 34271 strings out of 493305
- 789004 string characters out of 3126321
- 796851 words of memory out of 3000000
- 37375 multiletter control sequences out of 15000+200000
- 544738 words of font info for 57 fonts, out of 3000000 for 9000
+ 35633 strings out of 493305
+ 815032 string characters out of 3126321
+ 825233 words of memory out of 3000000
+ 38693 multiletter control sequences out of 15000+200000
+ 550340 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,80p,1650b,275s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Miriam Wagner\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\User
-s\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
-m1200.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
-ppen\ec\dpi600\ecrm1728.pk>
-Output written on Assignment2.pdf (1 page, 29172 bytes).
+ 55i,8n,80p,1650b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecrm0900.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Miriam Wagner\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Miriam Wagne
+r\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\
+Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1200.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecrm1728.pk>
+Output written on Assignment2.pdf (6 pages, 1075563 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 267 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
