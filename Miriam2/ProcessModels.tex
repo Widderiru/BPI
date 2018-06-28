@@ -1,7 +1,7 @@
-\section*{Process Models}
+\section{Process Models}
 %Providing process models is not enough because the process owner is diffident with any result which he/she is simply provided with. Therefore, he/she wants evidence of the goodness of these models. For this purpose, you should perform alignment-based conformance checking. Using the result of the conformance checker, you should motivate why the chosen models are better that any possible alternative (e.g. because of mediating fitness, precision, generalization and simplicity). For each model, also provide its textual description. 
 
-\subsection*{The model of the application's lifecycle}
+\subsection{The model of the application's lifecycle}
 %filter on event names
 %interactive data heuristic miner
 %conformance 
@@ -118,7 +118,7 @@ Checking the precision, \ref{fig:App_Prec}, and combine it with the results befo
 This model has a good simplicity, but still has a path fitness of 96.58\% and precision of 94.8\%, so it is still pretty good. Overall I so decided to choose the 0.076 frequency model for the application's lifecycle.
 
 
-\subsection*{The model of the proposal's lifecycle }
+\subsection{The model of the proposal's lifecycle }
 
 Applying the same steps on the proposal lifecycle gave me first 4 models to have a closer look at.
 
@@ -190,41 +190,21 @@ Having a look at the different conformance and precision outcomes \ref{fig:P_Con
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{P_DirectlyFollowedFreq0-08.PNG}
-  \caption{Directly followed graph 0.08 frequency}
-  \label{fig:P_DFG0-08}
+  \includegraphics[width=0.3\linewidth]{P_DirectlyFollowedFreq0-08.PNG}
+  \includegraphics[width=0.3\linewidth]{P_Conformance0-08.PNG}
+  \includegraphics[width=0.3\linewidth]{P_Precision0-08.PNG}
+  \caption{0.08 frequency}
+  \label{fig:P_0-08}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{P_DirectlyFollowedFreq0-025.PNG}
-  \caption{Directly followed graph 0.025 frequency}
-  \label{fig:P_DFG0-025}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{P_Conformance0-08.PNG}
-  \caption{Conformance for 0.08 frequency}
-  \label{fig:P_Conf0-08}
-\end{subfigure}%
-\begin{subfigure}{.5\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{P_Conformance0-025.PNG}
-  \caption{Conformance 0.025}
-  \label{fig:P_Conf0-025}
-\end{subfigure}
-\begin{subfigure}{.49\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{P_Precision0-08.PNG}
-  \caption{Precision for 0.08 as frequency}
-  \label{fig:P_Prec0-08}
-\end{subfigure}%
-\begin{subfigure}{.49\textwidth}
-  \centering
-  \includegraphics[width=\linewidth]{P_Precision0-025.PNG}
-  \caption{Precision for 0.025 as frequency}
-  \label{fig:P_Prec0-025}
+  \includegraphics[width=0.3\linewidth]{P_DirectlyFollowedFreq0-025.PNG}
+  \includegraphics[width=0.3\linewidth]{P_Conformance0-025.PNG}
+  \includegraphics[width=0.3\linewidth]{P_Precision0-025.PNG}
+  \caption{0.025 frequency}
+  \label{fig:P_0-025}
 \end{subfigure}
 \caption{Directly followeg graphs, conformance and precision}
 \label{fig:P_Direct2}
@@ -233,16 +213,36 @@ Having a look at the different conformance and precision outcomes \ref{fig:P_Con
 After checking all results in \ref{fig:P_Direct2} I had to choose.
 This was a hard decision, but I chose simplicity over the precision and picked the model with 0.025. The fitness is above 90\% and precision is also okay. Lower frequency threshold just makes the model to complicated.
 
-\subsection*{Combinded Model}
+\subsection{Combinded Model}
 %Models that combine these two models into one showing the lifecycle of the application and the proposal together. Due to the high variability, you should discover one different model for each possible outcome, namely whether the application is finally rejected, cancelled or approved. 
-First I filtered the data 3 times to have a dataset with all p
+First I filtered the data 3 times to have a dataset with all proposal data combined with the application data. This data I filtered with Heuristic filter (all configurations to 100\% and decide what is the endstate) I saved under the names "Filtered P App with approv", "Filtered P App with canc" and "Filtered P App with rej". Also the outcome just should be "APP\_rejected" or "APP\_cancelled" or "APP\_approved".
 
+\subsubsection{Endstate APP\_Approved}
+Like for approved and proposal I first checked different frequency filter setting to have a first idea, which models fullfill simplicity. Then for every chosen frequency in begin I checked conformance and precision.
 
-\subsection*{C-net of the proposal process}
+\begin{table}
+\caption{Results}
+\label{tab:ApprovRe}
+\begin{tabular}{c|c|c|c|c|}
+\cline{2-4}
+& & \multicolumn{3}{ c| }{Frequency} \\ \cline{2-5}
+& 0 & 0.1 & 0.2 & 0.3 \\ \cline{1-5}
+\multicolumn{1}{ |c|  }{Simplicity} 
+& - & - & + & ++      \\ \cline{1-5}
+\multicolumn{1}{ |c|  }{Fitness}  & 48.97 & 49.00 & 47.00 & 47.00      \\ \cline{1-5}
+\multicolumn{1}{ |c| } {Precision} & 93.3 & 94.5 & 91.7 & 94.8  \\ \cline{1-5}
+\end{tabular}
+\end{table}
+
+Based on the results, \ref{tab:ApprovRe}, I chose the model with 0.3 filtering. This one has a high simplicity, but still hast surprisingly good results.
+
+\includegraphics[]{APP_ApprovedDFG0-3.PNG}
+
+\subsection{C-net of the proposal process}
 %Analyze the C-net of the proposal process and explain it. 
 
-\subsection*{Own Petri net of the proposal process}
+\subsection{Own Petri net of the proposal process}
 %Based on your analysis, create a Petri net of the proposal process by your own. For example, do not consider infrequent paths and also outlier behaviors. 
 
-\subsection*{Analysis of the performance of Application and work process}
+\subsection{Analysis of the performance of Application and work process}
 %Analyze the performance of Application and work process. What are the bottlenecks? What are your recommendations to the company to increase the performance of the process? 
