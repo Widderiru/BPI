@@ -1,6 +1,12 @@
 %%This is a very basic article template.
 %%There is just one section and two subsections.
 \documentclass{article}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=20mm,
+ top=20mm,
+ }
 \usepackage[latin1]{inputenc} %coding of writteninput %latin1 allows for Umlaute
 \usepackage[T1]{fontenc}%vectorized fonts (cm-super package)
 \usepackage[english]{babel}%some specifics of the german language
@@ -21,11 +27,14 @@
 
 \usepackage{multirow}
 
+\usepackage{ textcomp } %textrightarrow
+
 \title{Homework 2}
 \author{ Miriam Wagner\\373045}
 \begin{document}
 \maketitle
 
+\tableofcontents
  	
 %\mainmatter
 \input{Introduction}

@@ -9,27 +9,27 @@
 For modeling the application lifecycle first the data has been filtered. Just the events beginning with "App\_..." are required. This data set is saved by the name "Filtered App". 
 
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_DirectlyFollowedFreq0.PNG}
   \caption{Directly followed graph without frequency filtering}
   \label{fig:APP_DFG0}
 \end{subfigure}%
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_DirectlyFollowedFreq0-051.PNG}
   \caption{Directly followed graph 0.051 frequency}
   \label{fig:APP_DFG0-51}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_DirectlyFollowedFreq0-1.PNG}
   \caption{Directly followed graph 0.1 frequency}
   \label{fig:APP_DFG0-1}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_DirectlyFollowedFreq0-2.PNG}
   \caption{Directly followed graph 0.2 frequency}
@@ -41,21 +41,21 @@ For modeling the application lifecycle first the data has been filtered. Just th
 
 The first try I choose the frequency 0.1 and had a look at the directly followed graph. I also checked 0.2 and 0.51. For comparsion in the end I checked also the original directly followed graph. My first choice was the directly followed graph with 0.1 as threhold for frequency, because it was a simple model that still tells us a lot about the main process. In figure \ref{fig:App_Direct} the 4 considered directly followed graphs can be seen. Obviously the original graph does not fullfill the criterium of simplicity and also the graph with frequency 0.051 still looks not as simpel as I would like.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{.3\textwidth}
+\begin{subfigure}{.25\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Conformance0-051.PNG}
   \caption{Conformance for 0.051 frequency}
   \label{fig:APP_Conf0-051}
 \end{subfigure}%
-\begin{subfigure}{.3\textwidth}
+\begin{subfigure}{.25\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Conformance0-1.PNG}
   \caption{Conformance 0.1}
   \label{fig:APP_Conf0-1}
 \end{subfigure}
-\begin{subfigure}{.3\textwidth}
+\begin{subfigure}{.25\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Conformance0-2.PNG}
   \caption{Conformance for 0.2 frequency}
@@ -70,15 +70,15 @@ The results in \ref{fig:App_Conf} showed me, that the model with 0.2 also has th
 
 Applying the Multi-perspective Process Explorer and choosing "show precision mode".
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Precision0-051.PNG}
   \caption{Precision for 0.051 as frequency}
   \label{fig:APP_Prec0-051}
 \end{subfigure}%
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Precision0-1.PNG}
   \caption{Precision for 0.1 as frequency}
@@ -91,21 +91,21 @@ Applying the Multi-perspective Process Explorer and choosing "show precision mod
 %0.07
 Checking the precision, \ref{fig:App_Prec}, and combine it with the results before, I came to the conclusion, that 0.1 is not good enough as model and 0.051 is good enough, but too complicated. Starting by this I again tried different frequency filters outgoing by 0.075 to find a model, which has a similar simplicity than the 0.1 frequency model, but a better conformance and precision. And already the frequency filtering 0.076 gives me the wished result.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Conformance0-076.PNG}
   \caption{Conformance}
   \label{fig:APP_Conf0-076}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_Precision0-076.PNG}
   \caption{Precision}
   \label{fig:APP_Prec0-076}
 \end{subfigure}
-\begin{subfigure}{\textwidth}
+\begin{subfigure}{0.8\textwidth}
   \centering
   \includegraphics[width=\linewidth]{App_DirectlyFollowedFreq0-076.PNG}
   \caption{Directly followed graph}
@@ -123,27 +123,27 @@ This model has a good simplicity, but still has a path fitness of 96.58\% and pr
 Applying the same steps on the proposal lifecycle gave me first 4 models to have a closer look at.
 
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_DirectlyFollowedFreq0.PNG}
   \caption{Directly followed graph without frequency filtering}
   \label{fig:P_DFG0}
 \end{subfigure}%
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_DirectlyFollowedFreq0-051.PNG}
   \caption{Directly followed graph 0.051 frequency}
   \label{fig:P_DFG0-051}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_DirectlyFollowedFreq0-1.PNG}
   \caption{Directly followed graph 0.1 frequency}
   \label{fig:P_DFG0-1}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_DirectlyFollowedFreq0-126.PNG}
   \caption{Directly followed graph 0.126 frequency}
@@ -155,27 +155,27 @@ Applying the same steps on the proposal lifecycle gave me first 4 models to have
 
 Because of simplicity I first checked the conformance and precision just for 0.051 and 0.1 frequency filtering. 
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_Conformance0-051.PNG}
   \caption{Conformance for 0.051 frequency}
   \label{fig:P_Conf0-051}
 \end{subfigure}%
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_Conformance0-1.PNG}
   \caption{Conformance 0.1}
   \label{fig:P_Conf0-1}
 \end{subfigure}
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_Precision0-051.PNG}
   \caption{Precision for 0.051 as frequency}
   \label{fig:P_Prec0-051}
 \end{subfigure}%
-\begin{subfigure}{.49\textwidth}
+\begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{P_Precision0-1.PNG}
   \caption{Precision for 0.1 as frequency}
@@ -188,9 +188,9 @@ Because of simplicity I first checked the conformance and precision just for 0.0
 
 Having a look at the different conformance and precision outcomes \ref{fig:P_ConfPrec}, I decided, that the 0.1 frequency model is not good enough, but wanted to check, if there is a model better or in simplicity or in performance for the 0.051 model. The models best for simplicity fitting had 0.08 frequency or 0.025.
 
-\begin{figure}[h]
+\begin{figure}[!htbp]
 \centering
-\begin{subfigure}{\textwidth}
+\begin{subfigure}{0.8\textwidth}
   \centering
   \includegraphics[width=0.3\linewidth]{P_DirectlyFollowedFreq0-08.PNG}
   \includegraphics[width=0.3\linewidth]{P_Conformance0-08.PNG}
@@ -198,7 +198,7 @@ Having a look at the different conformance and precision outcomes \ref{fig:P_Con
   \caption{0.08 frequency}
   \label{fig:P_0-08}
 \end{subfigure}
-\begin{subfigure}{\textwidth}
+\begin{subfigure}{0.8\textwidth}
   \centering
   \includegraphics[width=0.3\linewidth]{P_DirectlyFollowedFreq0-025.PNG}
   \includegraphics[width=0.3\linewidth]{P_Conformance0-025.PNG}
@@ -215,31 +215,132 @@ This was a hard decision, but I chose simplicity over the precision and picked t
 
 \subsection{Combinded Model}
 %Models that combine these two models into one showing the lifecycle of the application and the proposal together. Due to the high variability, you should discover one different model for each possible outcome, namely whether the application is finally rejected, cancelled or approved. 
-First I filtered the data 3 times to have a dataset with all proposal data combined with the application data. This data I filtered with Heuristic filter (all configurations to 100\% and decide what is the endstate) I saved under the names "Filtered P App with approv", "Filtered P App with canc" and "Filtered P App with rej". Also the outcome just should be "APP\_rejected" or "APP\_cancelled" or "APP\_approved".
+
+For combinded Models I first filtered the data to have a dataset with all proposal data combined with the application data. This data I filtered with Heuristic filter (all configurations to 100\% and just deciding what the endstate is) with the outcomes/endstates "APP\_rejected" or "APP\_cancelled" or "APP\_approved". I saved them under the names "Filtered P App with approv", "Filtered P App with canc" and "Filtered P App with rej". 
 
 \subsubsection{Endstate APP\_Approved}
 Like for approved and proposal I first checked different frequency filter setting to have a first idea, which models fullfill simplicity. Then for every chosen frequency in begin I checked conformance and precision.
 
-\begin{table}
-\caption{Results}
-\label{tab:ApprovRe}
+\begin{figure}[!htbp]
+\centering
 \begin{tabular}{c|c|c|c|c|}
-\cline{2-4}
-& & \multicolumn{3}{ c| }{Frequency} \\ \cline{2-5}
+\cline{2-5}
+& \multicolumn{4}{ c| }{Frequency} \\ \cline{2-5}
 & 0 & 0.1 & 0.2 & 0.3 \\ \cline{1-5}
 \multicolumn{1}{ |c|  }{Simplicity} 
 & - & - & + & ++      \\ \cline{1-5}
-\multicolumn{1}{ |c|  }{Fitness}  & 48.97 & 49.00 & 47.00 & 47.00      \\ \cline{1-5}
+\multicolumn{1}{ |c|  }{Fitness}  & 99.84 & 99.47 & 93.93 & 93.93      \\ \cline{1-5}
 \multicolumn{1}{ |c| } {Precision} & 93.3 & 94.5 & 91.7 & 94.8  \\ \cline{1-5}
 \end{tabular}
-\end{table}
+\caption{Results for approved as endstate}
+\label{tab:ApprovRe}
+\end{figure}
 
-Based on the results, \ref{tab:ApprovRe}, I chose the model with 0.3 filtering. This one has a high simplicity, but still hast surprisingly good results.
+Based on the results, \ref{tab:ApprovRe}, I chose the model with 0.3 filtering. This one has a high simplicity, but still has surprisingly good results.
+%TODO Maybe all together
 
-\includegraphics[]{APP_ApprovedDFG0-3.PNG}
+\subsubsection{Endstate APP\_Cancelled}
+
+\begin{figure}[!htbp]
+\centering
+\begin{tabular}{c|c|c|c|}
+\cline{2-4}
+& \multicolumn{3}{ c| }{Frequency} \\ \cline{2-4}
+& 0 & 0.049 & 0.1 \\ \cline{1-4}
+\multicolumn{1}{ |c|  }{Simplicity} 
+& - & + & ++      \\ \cline{1-4}
+\multicolumn{1}{ |c|  }{Fitness}  & 99.96 & 99.39 & 96.84       \\ \cline{1-4}
+\multicolumn{1}{ |c| } {Precision} & 92.5 & 91.8 & 94.6   \\ \cline{1-4}
+\end{tabular}
+\caption{Results for cancelled as endstate}
+\label{tab:CancRe}
+\end{figure}
+Like for APP\_Approved I checked different configurations and based on the results, \ref{tab:CancRe}, I decided to pick 0.1 filtered frequency model. The fitness and precision is still higher than 90\%, but it is also the most simpel model.
+
+
+
+
+\subsubsection{Endstate APP\_Rejected}
+The last analysis is of the models ending in APP\_Rejected. In the first step I checked different frequency filters and decided based on simplicity and traceability I had a closer look at 0, 0.025 and 0.1.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tabular}{c|c|c|c|}
+\cline{2-4}
+& \multicolumn{3}{ c| }{Frequency} \\ \cline{2-4}
+& 0 & 0.025 & 0.1 \\ \cline{1-4}
+\multicolumn{1}{ |c|  }{Simplicity} 
+& - & + & +++      \\ \cline{1-4}
+\multicolumn{1}{ |c|  }{Fitness}  & 1.00 & 99.60 & 96.91       \\ \cline{1-4}
+\multicolumn{1}{ |c| } {Precision} & 99.3 & 98.7 & 100   \\ \cline{1-4}
+\end{tabular}
+\caption{Results for cancelled as endstate}
+\label{tab:RejRe}
+\end{figure}
+
+Based on \ref{tab:RejRe} I chose 0.1 filtered frequency model as the best. It is really easy to follow and has a good fitness.
+
+
+
+\subsubsection{All 3 Models}
+\begin{figure}[!htbp]
+\centering
+\begin{subfigure}{.3\textwidth}
+\includegraphics[height=0.3\textheight]{APP_ApprovedDFG0-3.PNG}  
+\caption{Endstate APP\_Approved}
+\label{fig:ApprovModel}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+\includegraphics[height=0.3\textheight]{APP_CancDFG0-1.PNG}
+\caption{Endstate APP\_Cancelled}
+\label{fig:CancModel}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+\includegraphics[width=\linewidth]{Rej0-1.PNG}
+\caption{Endstate APP\_Rejected}
+\label{fig:RejModel}
+\end{subfigure}
+\caption{Models for the different endstates}
+\end{figure}
 
 \subsection{C-net of the proposal process}
 %Analyze the C-net of the proposal process and explain it. 
+
+Based on the results of my analysis of the model before I chose the same frequency filtering for the C-net of the proposal process.
+\begin{figure}[!htbp]
+\centering
+\begin{subfigure}{0.8\textwidth}
+\includegraphics[height = 0.2\textheight]{PropC-Net0-024.PNG}
+\caption{C-net with 0.025 filtered frequency}
+\label{fig:cnetP0-025}
+\end{subfigure}
+\begin{subfigure}{0.8\textwidth}
+\includegraphics[height = 0.2\textheight]{PropC-Net0.PNG}
+\caption{C-net without filtered frequency}
+\label{fig:cnetP0}
+\end{subfigure}
+\caption{C-Nets of the proposal process}
+\label{fig:cNetP}
+\end{figure}
+
+In \ref{fig:cNetP} I show two C-nets of the proposal process for comparsion. \ref{fig:cnetP0-025} is the one I picked and I will discuss it later in detail. In \ref{fig:cnetP0} the original C-net of the process is to see and obviously it is much more complicated and not so intuitive than the filtered one. 
+
+\subsubsection{Analysis of the C-net}
+For simplicity reasons I will not write "P\_" as prefix of every activity.
+The first thing I did is having a look at the maximal number of bindings. This is for sending with 6 possible bindings. The input is always from initiation, but there are 4 different outputs possible. Having a look at all possible traces and the corresponding procedures.  Just counting the possible traces shows you, that there are infinite many possible traces, because of a loop between sending and initiation. 
+\begin{itemize}
+	\item Done
+	\item Selection \textrightarrow Initiation \textrightarrow Sending \textrightarrow
+	\begin{itemize}
+	\item  Returning \textrightarrow
+	\begin{itemize}
+		\item Acceptation \textrightarrow Done
+		\item Rejection \textrightarrow Done
+	\end{itemize}
+	\item (Cancellation \textrightarrow Selection) or (Selection \textrightarrow Cancellation) \textrightarrow Initiation \textrightarrow Sending ...
+	\item Cancellation \textrightarrow Done
+	\end{itemize}
+\end{itemize}
 
 \subsection{Own Petri net of the proposal process}
 %Based on your analysis, create a Petri net of the proposal process by your own. For example, do not consider infrequent paths and also outlier behaviors. 
