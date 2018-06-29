@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  29 JUN 2018 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  29 JUN 2018 10:11
 entering extended mode
 **"C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
 ("C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
@@ -1760,30 +1760,13 @@ Overfull \hbox (11.1837pt too wide) in paragraph at lines 318--319
 [][] 
  []
 
-[6 <./APP_ApprovedDFG0-3.PNG> <./APP_CancDFG0-1.PNG> <./Rej0-1.PNG>])
-(Questions.tex) (Conclusion.tex) [7 <./PropC-Net0-024.PNG> <./PropC-Net0.PNG>]
-
-! LaTeX Error: \begin{itemize} on input line 331 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+) (Questions.tex) (Conclusion.tex) [6 <./APP_ApprovedDFG0-3.PNG> <./APP_CancDFG
+0-1.PNG> <./Rej0-1.PNG>] [7 <./PropC-Net0-024.PNG> <./PropC-Net0.PNG>] [8]
 (Assignment2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 331 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
  36645 strings out of 493305
  831043 string characters out of 3126321
@@ -1792,20 +1775,19 @@ Here is how much of TeX's memory you used:
  551451 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,80p,1650b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\tcrm1000.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Miriam Wagner\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\User
-s\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
-m1000.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
-ppen\ec\dpi600\ecbx1000.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Miriam Wagner\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Miria
-m Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.p
-k>
-Output written on Assignment2.pdf (7 pages, 1311207 bytes).
+ <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\tcrm1000.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\Miriam Wagner\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Miriam Wagne
+r\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\
+Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecbx1000.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Miriam Wagner\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk>
+Output written on Assignment2.pdf (8 pages, 1311680 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
+ 348 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

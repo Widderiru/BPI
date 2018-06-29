@@ -328,6 +328,7 @@ In \ref{fig:cNetP} I show two C-nets of the proposal process for comparsion. \re
 \subsubsection{Analysis of the C-net}
 For simplicity reasons I will not write "P\_" as prefix of every activity.
 The first thing I did is having a look at the maximal number of bindings. This is for sending with 6 possible bindings. The input is always from initiation, but there are 4 different outputs possible. Having a look at all possible traces and the corresponding procedures.  Just counting the possible traces shows you, that there are infinite many possible traces, because of a loop between sending and initiation. 
+\begin{figure}[!htbp]
 \begin{itemize}
 	\item Done
 	\item Selection \textrightarrow Initiation \textrightarrow Sending \textrightarrow
@@ -337,10 +338,12 @@ The first thing I did is having a look at the maximal number of bindings. This i
 		\item Acceptation \textrightarrow Done
 		\item Rejection \textrightarrow Done
 	\end{itemize}
-	\item (Cancellation \textrightarrow Selection) or (Selection \textrightarrow Cancellation) \textrightarrow Initiation \textrightarrow Sending ...
+	\item ((Cancellation \textrightarrow Selection) or (Selection \textrightarrow Cancellation)) \textrightarrow Initiation \textrightarrow Sending ...
 	\item Cancellation \textrightarrow Done
 	\end{itemize}
 \end{itemize}
+\end{figure}
+
 
 \subsection{Own Petri net of the proposal process}
 %Based on your analysis, create a Petri net of the proposal process by your own. For example, do not consider infrequent paths and also outlier behaviors. 
