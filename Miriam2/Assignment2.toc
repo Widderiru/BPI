@@ -4,16 +4,17 @@
 \contentsline {subsection}{\numberline {1.2}Application data set}{1}
 \contentsline {subsubsection}{\numberline {1.2.1}General details of the data set}{2}
 \contentsline {subsubsection}{\numberline {1.2.2}Discover and evaluate a model of the application lifecycle}{2}
+\contentsline {subsubsection}{\numberline {1.2.3}Discussion of the lifecycle}{4}
 \contentsline {subsection}{\numberline {1.3}Proposal data}{4}
 \contentsline {subsubsection}{\numberline {1.3.1}General Details of the data set}{4}
-\contentsline {subsubsection}{\numberline {1.3.2}Discover and evaluate a model of the proposal lifecycle}{5}
-\contentsline {subsubsection}{\numberline {1.3.3}Analyzing the explored model}{7}
+\contentsline {subsubsection}{\numberline {1.3.2}Discover and evaluate models of the proposal lifecycle}{5}
+\contentsline {subsubsection}{\numberline {1.3.3}Discussion of the lifecycle}{7}
 \contentsline {subsection}{\numberline {1.4}Combinded Model}{7}
 \contentsline {subsubsection}{\numberline {1.4.1}Endstate APP\_Approved}{7}
-\contentsline {subsubsection}{\numberline {1.4.2}Endstate APP\_Cancelled}{8}
-\contentsline {subsubsection}{\numberline {1.4.3}Endstate APP\_Rejected}{8}
-\contentsline {subsubsection}{\numberline {1.4.4}All 3 Models}{8}
-\contentsline {subsection}{\numberline {1.5}C-net of the proposal process}{9}
-\contentsline {subsubsection}{\numberline {1.5.1}Analysis of the C-net}{9}
-\contentsline {subsection}{\numberline {1.6}Own Petri net of the proposal process}{10}
-\contentsline {subsection}{\numberline {1.7}Analysis of the performance of Application and work process}{10}
+\contentsline {subsubsection}{\numberline {1.4.2}Endstate APP\_Cancelled}{9}
+\contentsline {subsubsection}{\numberline {1.4.3}Endstate APP\_Rejected}{10}
+\contentsline {subsection}{\numberline {1.5}C-net of the proposal process}{11}
+\contentsline {subsubsection}{\numberline {1.5.1}Analysis of the C-net}{11}
+\contentsline {subsection}{\numberline {1.6}Own Petri net of the proposal process}{12}
+\contentsline {subsection}{\numberline {1.7}Analysis of the performance of Application and work process}{12}
+\contentsline {subsubsection}{\numberline {1.7.1}General Details of the data set}{12}

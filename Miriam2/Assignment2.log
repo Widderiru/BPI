@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  3 JUL 2018 00:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.7)  4 JUL 2018 20:00
 entering extended mode
 **"C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
 ("C:/Users/Miriam Wagner/Desktop/BPI/Miriam2/Assignment2.tex"
@@ -1424,7 +1424,16 @@ Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ) (Assignment2.aux
 
-LaTeX Warning: Label `fig:App_Prec' multiply defined.
+LaTeX Warning: Label `fig:P_0-08' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:P_0-08' multiply defined.
+
+
+LaTeX Warning: Label `fig:P_0-025' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:P_0-025' multiply defined.
 
 )
 \openout1 = `Assignment2.aux'.
@@ -1585,9 +1594,15 @@ Overfull \hbox (21.82593pt too wide) in paragraph at lines 19--20
  []
 
 
-Overfull \hbox (42.23761pt too wide) in paragraph at lines 19--20
-\T1/cmr/m/n/10 ("App_Finalization" (8.242%), ("App_Cancellation" (4.613%), ("Ap
-p_Initiation" (3.691%), ("App_Approving"
+Overfull \hbox (67.78693pt too wide) in paragraph at lines 19--20
+\T1/cmr/m/n/10 "App_Rejection" (12.547%), "App_Pre_Acceptation" (12.107%), "App
+_Acceptation" (8.403%), ("App_Finalization"
+ []
+
+
+Overfull \hbox (25.79718pt too wide) in paragraph at lines 19--20
+\T1/cmr/m/n/10 "App_Initiation" (8.573%), "App_Registration" (6.014%), "App_App
+roving" (2.575%), "App_Finalization"
  []
 
 <AppData.PNG, id=14, 946.03438pt x 441.65pt>
@@ -1601,250 +1616,388 @@ Overfull \hbox (12.37454pt too wide) in paragraph at lines 31--32
 " and "APP_Incomplete_Submission".
  []
 
-<App_DirectlyFollowedFreq0.PNG, id=16, 808.01875pt x 431.6125pt>
+<App_DirectlyFollowedFreq0.PNG, id=16, 950.55125pt x 429.10312pt>
 File: App_DirectlyFollowedFreq0.PNG Graphic file (type png)
 <use App_DirectlyFollowedFreq0.PNG>
 Package pdftex.def Info: App_DirectlyFollowedFreq0.PNG  used on input line 40.
-(pdftex.def)             Requested size: 180.38736pt x 96.35124pt.
-
-Underfull \hbox (badness 1715) in paragraph at lines 41--41
-[]\T1/cmr/m/n/9 (a) |Di-rectly fol-lowed graph with-out fre-
- []
-
-<App_DirectlyFollowedFreq0-051.PNG, id=17, 946.53625pt x 459.21562pt>
+(pdftex.def)             Requested size: 180.38736pt x 81.42567pt.
+<App_DirectlyFollowedFreq0-051.PNG, id=17, 954.06438pt x 429.10312pt>
 File: App_DirectlyFollowedFreq0-051.PNG Graphic file (type png)
 <use App_DirectlyFollowedFreq0-051.PNG>
 Package pdftex.def Info: App_DirectlyFollowedFreq0-051.PNG  used on input line 
 46.
-(pdftex.def)             Requested size: 180.38736pt x 87.51112pt.
-<App_DirectlyFollowedFreq0-1.PNG, id=18, 948.04187pt x 472.26437pt>
+(pdftex.def)             Requested size: 180.38736pt x 81.13103pt.
+<App_DirectlyFollowedFreq0-1.PNG, id=18, 948.04187pt x 412.54124pt>
 File: App_DirectlyFollowedFreq0-1.PNG Graphic file (type png)
 <use App_DirectlyFollowedFreq0-1.PNG>
 Package pdftex.def Info: App_DirectlyFollowedFreq0-1.PNG  used on input line 52
 .
-(pdftex.def)             Requested size: 180.38736pt x 89.85367pt.
-<App_DirectlyFollowedFreq0-2.PNG, id=19, 951.05313pt x 465.74pt>
+(pdftex.def)             Requested size: 180.38736pt x 78.49066pt.
+<App_DirectlyFollowedFreq0-2.PNG, id=19, 950.04938pt x 424.58624pt>
 File: App_DirectlyFollowedFreq0-2.PNG Graphic file (type png)
 <use App_DirectlyFollowedFreq0-2.PNG>
 Package pdftex.def Info: App_DirectlyFollowedFreq0-2.PNG  used on input line 58
 .
-(pdftex.def)             Requested size: 180.38736pt x 88.33517pt.
-<App_Conformance0-051.PNG, id=20, 198.24063pt x 100.375pt>
+(pdftex.def)             Requested size: 180.38736pt x 80.6139pt.
+[2 <./AppData.PNG> <./App_DirectlyFollowedFreq0.PNG> <./App_DirectlyFollowedFre
+q0-051.PNG> <./App_DirectlyFollowedFreq0-1.PNG> <./App_DirectlyFollowedFreq0-2.
+PNG>]
+<App_Conformance0-051.PNG, id=29, 198.24063pt x 100.375pt>
 File: App_Conformance0-051.PNG Graphic file (type png)
 <use App_Conformance0-051.PNG>
 Package pdftex.def Info: App_Conformance0-051.PNG  used on input line 72.
 (pdftex.def)             Requested size: 112.74382pt x 57.08568pt.
-<App_Conformance0-1.PNG, id=21, 200.24812pt x 103.88812pt>
+<App_Conformance0-1.PNG, id=30, 200.24812pt x 103.88812pt>
 File: App_Conformance0-1.PNG Graphic file (type png)
 <use App_Conformance0-1.PNG>
 Package pdftex.def Info: App_Conformance0-1.PNG  used on input line 78.
 (pdftex.def)             Requested size: 112.74382pt x 58.4924pt.
-<App_Conformance0-2.PNG, id=22, 200.75pt x 99.37125pt>
-File: App_Conformance0-2.PNG Graphic file (type png)
-<use App_Conformance0-2.PNG>
-Package pdftex.def Info: App_Conformance0-2.PNG  used on input line 84.
-(pdftex.def)             Requested size: 112.74382pt x 55.80975pt.
-<App_Precision0-051.PNG, id=23, 273.02pt x 107.90312pt>
+<App_Precision0-051.PNG, id=31, 273.02pt x 107.90312pt>
 File: App_Precision0-051.PNG Graphic file (type png)
 <use App_Precision0-051.PNG>
-Package pdftex.def Info: App_Precision0-051.PNG  used on input line 102.
+Package pdftex.def Info: App_Precision0-051.PNG  used on input line 93.
 (pdftex.def)             Requested size: 180.38736pt x 71.29366pt.
-<App_Precision0-1.PNG, id=24, 273.52188pt x 109.40875pt>
+<App_Precision0-1.PNG, id=32, 273.52188pt x 109.40875pt>
 File: App_Precision0-1.PNG Graphic file (type png)
 <use App_Precision0-1.PNG>
-Package pdftex.def Info: App_Precision0-1.PNG  used on input line 108.
+Package pdftex.def Info: App_Precision0-1.PNG  used on input line 99.
 (pdftex.def)             Requested size: 180.38736pt x 72.15489pt.
-[2 <./AppData.PNG>] [3 <./App_DirectlyFollowedFreq0.PNG> <./App_DirectlyFollowe
-dFreq0-051.PNG> <./App_DirectlyFollowedFreq0-1.PNG> <./App_DirectlyFollowedFreq
-0-2.PNG> <./App_Conformance0-051.PNG> <./App_Conformance0-1.PNG> <./App_Conform
-ance0-2.PNG> <./App_Precision0-051.PNG> <./App_Precision0-1.PNG>]
-<App_Conformance0-076.PNG, id=42, 198.24063pt x 98.3675pt>
-File: App_Conformance0-076.PNG Graphic file (type png)
-<use App_Conformance0-076.PNG>
-Package pdftex.def Info: App_Conformance0-076.PNG  used on input line 123.
-(pdftex.def)             Requested size: 180.38736pt x 89.51003pt.
-<App_Precision0-076.PNG, id=43, 169.13188pt x 110.91437pt>
-File: App_Precision0-076.PNG Graphic file (type png)
-<use App_Precision0-076.PNG>
-Package pdftex.def Info: App_Precision0-076.PNG  used on input line 124.
-(pdftex.def)             Requested size: 180.38736pt x 118.29977pt.
-<App_DirectlyFollowedFreq0-076.PNG, id=44, 336.50719pt x 649.67719pt>
-File: App_DirectlyFollowedFreq0-076.PNG Graphic file (type png)
-<use App_DirectlyFollowedFreq0-076.PNG>
-Package pdftex.def Info: App_DirectlyFollowedFreq0-076.PNG  used on input line 
-130.
-(pdftex.def)             Requested size: 106.7089pt x 206.02249pt.
-
-Overfull \hbox (21.54822pt too wide) in paragraph at lines 140--141
-\T1/cmr/m/n/10 all 13087 cases com-pleteted this two steps, 7367, roughly spo-k
-en 50%, ac-com-plished "App_Pre_Acceptation".
- []
-
-<ProposalData.PNG, id=45, 943.02313pt x 438.63875pt>
+<App_Conformance0-069.PNG, id=33, 196.23312pt x 94.85437pt>
+File: App_Conformance0-069.PNG Graphic file (type png)
+<use App_Conformance0-069.PNG>
+Package pdftex.def Info: App_Conformance0-069.PNG  used on input line 111.
+(pdftex.def)             Requested size: 162.34752pt x 78.48015pt.
+<App_Precision0-069.PNG, id=34, 169.13188pt x 105.89563pt>
+File: App_Precision0-069.PNG Graphic file (type png)
+<use App_Precision0-069.PNG>
+Package pdftex.def Info: App_Precision0-069.PNG  used on input line 112.
+(pdftex.def)             Requested size: 162.34752pt x 101.65054pt.
+<App_DirectlyFollowedFreq0-069.PNG, id=35, 759.33687pt x 214.30063pt>
+File: App_DirectlyFollowedFreq0-069.PNG Graphic file (type png)
+<use App_DirectlyFollowedFreq0-069.PNG>
+Package pdftex.def Info: App_DirectlyFollowedFreq0-069.PNG  used on input line 
+118.
+(pdftex.def)             Requested size: 405.875pt x 114.54669pt.
+ [3 <./App_Conformance0-051.PNG> <./App_Conformance0-1.PNG> <./App_Precision0-0
+51.PNG> <./App_Precision0-1.PNG> <./App_Conformance0-069.PNG> <./App_Precision0
+-069.PNG> <./App_DirectlyFollowedFreq0-069.PNG>]
+<APP_Replay.PNG, id=46, 809.52437pt x 122.95938pt>
+File: APP_Replay.PNG Graphic file (type png)
+<use APP_Replay.PNG>
+Package pdftex.def Info: APP_Replay.PNG  used on input line 133.
+(pdftex.def)             Requested size: 405.875pt x 61.65025pt.
+<ProposalData.PNG, id=47, 943.02313pt x 438.63875pt>
 File: ProposalData.PNG Graphic file (type png)
 <use ProposalData.PNG>
-Package pdftex.def Info: ProposalData.PNG  used on input line 151.
+Package pdftex.def Info: ProposalData.PNG  used on input line 166.
 (pdftex.def)             Requested size: 295.28397pt x 137.34483pt.
 
-Overfull \hbox (1.05322pt too wide) in paragraph at lines 158--160
+Overfull \hbox (1.05322pt too wide) in paragraph at lines 173--175
 \T1/cmr/m/n/10 "P_Cancellation" (11.698%), "P_Returning" (11.055%), "P_Acceptat
 ion"(7.179%) and "P_Rejection"
  []
 
 
-Overfull \hbox (3.09903pt too wide) in paragraph at lines 158--160
+Overfull \hbox (3.09903pt too wide) in paragraph at lines 173--175
 \T1/cmr/m/n/10 in to-tal 31244 events. It al-ways stars with "P_Selection" and 
 has 5 dif-fer-ent end events: "P_Acceptation"
  []
 
 
-Overfull \hbox (32.3789pt too wide) in paragraph at lines 158--160
+Overfull \hbox (32.3789pt too wide) in paragraph at lines 173--175
 \T1/cmr/m/n/10 (44.726%), "P_Cancellation"(32,702%), "P_Rejection" (15.992%), "
 P_Sending" (4.806%) and "P_Returning"
  []
 
-[4 <./App_Conformance0-076.PNG> <./App_Precision0-076.PNG> <./App_DirectlyFollo
-wedFreq0-076.PNG>]
-<P_DirectlyFollowedFreq0.PNG, id=51, 808.52063pt x 432.61626pt>
+[4 <./APP_Replay.PNG>]
+<P_DirectlyFollowedFreq0.PNG, id=53, 954.06438pt x 429.10312pt>
 File: P_DirectlyFollowedFreq0.PNG Graphic file (type png)
 <use P_DirectlyFollowedFreq0.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0.PNG  used on input line 174.
-(pdftex.def)             Requested size: 180.38736pt x 96.5159pt.
-
-Underfull \hbox (badness 1715) in paragraph at lines 175--175
-[]\T1/cmr/m/n/9 (a) |Di-rectly fol-lowed graph with-out fre-
- []
-
-<P_DirectlyFollowedFreq0-051.PNG, id=52, 717.17938pt x 433.62pt>
+Package pdftex.def Info: P_DirectlyFollowedFreq0.PNG  used on input line 189.
+(pdftex.def)             Requested size: 180.38736pt x 81.13103pt.
+<P_DirectlyFollowedFreq0-051.PNG, id=54, 962.59625pt x 432.61626pt>
 File: P_DirectlyFollowedFreq0-051.PNG Graphic file (type png)
 <use P_DirectlyFollowedFreq0-051.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0-051.PNG  used on input line 18
-0.
-(pdftex.def)             Requested size: 180.38736pt x 109.06638pt.
-<P_DirectlyFollowedFreq0-1.PNG, id=53, 685.05937pt x 430.60875pt>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-051.PNG  used on input line 19
+5.
+(pdftex.def)             Requested size: 180.38736pt x 81.06914pt.
+<P_DirectlyFollowedFreq0-1.PNG, id=55, 962.59625pt x 433.62pt>
 File: P_DirectlyFollowedFreq0-1.PNG Graphic file (type png)
 <use P_DirectlyFollowedFreq0-1.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0-1.PNG  used on input line 186.
+Package pdftex.def Info: P_DirectlyFollowedFreq0-1.PNG  used on input line 201.
 
-(pdftex.def)             Requested size: 180.38736pt x 113.388pt.
-<P_DirectlyFollowedFreq0-126.PNG, id=54, 696.6025pt x 434.62375pt>
+(pdftex.def)             Requested size: 180.38736pt x 81.25723pt.
+<P_DirectlyFollowedFreq0-126.PNG, id=56, 963.6pt x 432.61626pt>
 File: P_DirectlyFollowedFreq0-126.PNG Graphic file (type png)
 <use P_DirectlyFollowedFreq0-126.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0-126.PNG  used on input line 19
-2.
-(pdftex.def)             Requested size: 180.38736pt x 112.5419pt.
-<P_Conformance0-051.PNG, id=55, 199.24437pt x 98.86937pt>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-126.PNG  used on input line 20
+7.
+(pdftex.def)             Requested size: 180.38736pt x 80.98332pt.
+<P_Conformance0-051.PNG, id=57, 199.24437pt x 98.86937pt>
 File: P_Conformance0-051.PNG Graphic file (type png)
 <use P_Conformance0-051.PNG>
-Package pdftex.def Info: P_Conformance0-051.PNG  used on input line 206.
+Package pdftex.def Info: P_Conformance0-051.PNG  used on input line 222.
 (pdftex.def)             Requested size: 180.38736pt x 89.51566pt.
-<P_Conformance0-1.PNG, id=56, 196.23312pt x 96.86188pt>
+<P_Conformance0-1.PNG, id=58, 196.23312pt x 96.86188pt>
 File: P_Conformance0-1.PNG Graphic file (type png)
 <use P_Conformance0-1.PNG>
-Package pdftex.def Info: P_Conformance0-1.PNG  used on input line 212.
+Package pdftex.def Info: P_Conformance0-1.PNG  used on input line 228.
 (pdftex.def)             Requested size: 180.38736pt x 89.04599pt.
-<P_Precision0-051.PNG, id=57, 270.00874pt x 96.86188pt>
+<P_Precision0-051.PNG, id=59, 270.00874pt x 96.86188pt>
 File: P_Precision0-051.PNG Graphic file (type png)
 <use P_Precision0-051.PNG>
-Package pdftex.def Info: P_Precision0-051.PNG  used on input line 218.
+Package pdftex.def Info: P_Precision0-051.PNG  used on input line 234.
 (pdftex.def)             Requested size: 180.38736pt x 64.71236pt.
-<P_Precision0-1.PNG, id=58, 222.33063pt x 87.32625pt>
+<P_Precision0-1.PNG, id=60, 222.33063pt x 87.32625pt>
 File: P_Precision0-1.PNG Graphic file (type png)
 <use P_Precision0-1.PNG>
-Package pdftex.def Info: P_Precision0-1.PNG  used on input line 224.
+Package pdftex.def Info: P_Precision0-1.PNG  used on input line 240.
 (pdftex.def)             Requested size: 180.38736pt x 70.85246pt.
-<P_DirectlyFollowedFreq0-08.PNG, id=59, 680.5425pt x 434.12187pt>
+<P_DirectlyFollowedFreq0-08.PNG, id=61, 963.6pt x 436.63126pt>
 File: P_DirectlyFollowedFreq0-08.PNG Graphic file (type png)
 <use P_DirectlyFollowedFreq0-08.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0-08.PNG  used on input line 239
+Package pdftex.def Info: P_DirectlyFollowedFreq0-08.PNG  used on input line 255
 .
-(pdftex.def)             Requested size: 108.23557pt x 69.0436pt.
-<P_Conformance0-08.PNG, id=60, 200.24812pt x 96.36pt>
-File: P_Conformance0-08.PNG Graphic file (type png)
-<use P_Conformance0-08.PNG>
-Package pdftex.def Info: P_Conformance0-08.PNG  used on input line 240.
-(pdftex.def)             Requested size: 108.23557pt x 52.0836pt.
-<P_Precision0-08.PNG, id=61, 272.51813pt x 106.3975pt>
-File: P_Precision0-08.PNG Graphic file (type png)
-<use P_Precision0-08.PNG>
-Package pdftex.def Info: P_Precision0-08.PNG  used on input line 241.
-(pdftex.def)             Requested size: 108.23557pt x 42.25789pt.
-<P_DirectlyFollowedFreq0-025.PNG, id=62, 712.6625pt x 433.11812pt>
+(pdftex.def)             Requested size: 176.78496pt x 80.1026pt.
+<P_DirectlyFollowedFreq0-025.PNG, id=62, 962.09438pt x 434.62375pt>
 File: P_DirectlyFollowedFreq0-025.PNG Graphic file (type png)
 <use P_DirectlyFollowedFreq0-025.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0-025.PNG  used on input line 24
-7.
-(pdftex.def)             Requested size: 108.23557pt x 65.7778pt.
-<P_Conformance0-025.PNG, id=63, 196.735pt x 97.86563pt>
+Package pdftex.def Info: P_DirectlyFollowedFreq0-025.PNG  used on input line 26
+1.
+(pdftex.def)             Requested size: 176.78496pt x 79.86032pt.
+<P_Conformance0-08.PNG, id=63, 200.24812pt x 96.36pt>
+File: P_Conformance0-08.PNG Graphic file (type png)
+<use P_Conformance0-08.PNG>
+Package pdftex.def Info: P_Conformance0-08.PNG  used on input line 273.
+(pdftex.def)             Requested size: 180.38736pt x 86.80846pt.
+<P_Precision0-08.PNG, id=64, 272.51813pt x 106.3975pt>
+File: P_Precision0-08.PNG Graphic file (type png)
+<use P_Precision0-08.PNG>
+Package pdftex.def Info: P_Precision0-08.PNG  used on input line 274.
+(pdftex.def)             Requested size: 180.38736pt x 70.42711pt.
+<P_Conformance0-025.PNG, id=65, 196.735pt x 97.86563pt>
 File: P_Conformance0-025.PNG Graphic file (type png)
 <use P_Conformance0-025.PNG>
-Package pdftex.def Info: P_Conformance0-025.PNG  used on input line 248.
-(pdftex.def)             Requested size: 108.23557pt x 53.84117pt.
-<P_Precision0-025.PNG, id=64, 272.51813pt x 106.3975pt>
+Package pdftex.def Info: P_Conformance0-025.PNG  used on input line 280.
+(pdftex.def)             Requested size: 180.38736pt x 89.73282pt.
+<P_Precision0-025.PNG, id=66, 272.51813pt x 106.3975pt>
 File: P_Precision0-025.PNG Graphic file (type png)
 <use P_Precision0-025.PNG>
-Package pdftex.def Info: P_Precision0-025.PNG  used on input line 249.
-(pdftex.def)             Requested size: 108.23557pt x 42.25789pt.
-[5 <./ProposalData.PNG> <./P_DirectlyFollowedFreq0.PNG> <./P_DirectlyFollowedFr
-eq0-051.PNG> <./P_DirectlyFollowedFreq0-1.PNG> <./P_DirectlyFollowedFreq0-126.P
-NG>] [6 <./P_Conformance0-051.PNG> <./P_Conformance0-1.PNG> <./P_Precision0-051
-.PNG> <./P_Precision0-1.PNG> <./P_DirectlyFollowedFreq0-08.PNG> <./P_Conformanc
-e0-08.PNG> <./P_Precision0-08.PNG> <./P_DirectlyFollowedFreq0-025.PNG> <./P_Con
-formance0-025.PNG> <./P_Precision0-025.PNG>]
-<P_DirectlyFollowedFreq0-025End.PNG, id=86, 412.54124pt x 650.43pt>
-File: P_DirectlyFollowedFreq0-025End.PNG Graphic file (type png)
-<use P_DirectlyFollowedFreq0-025End.PNG>
-Package pdftex.def Info: P_DirectlyFollowedFreq0-025End.PNG  used on input line
- 262.
-(pdftex.def)             Requested size: 171.3728pt x 270.19138pt.
+Package pdftex.def Info: P_Precision0-025.PNG  used on input line 281.
+(pdftex.def)             Requested size: 180.38736pt x 70.42711pt.
+ [5 <./ProposalData.PNG> <./P_DirectlyFollowedFreq0.PNG> <./P_DirectlyFollowedF
+req0-051.PNG> <./P_DirectlyFollowedFreq0-1.PNG> <./P_DirectlyFollowedFreq0-126.
+PNG>] [6 <./P_Conformance0-051.PNG> <./P_Conformance0-1.PNG> <./P_Precision0-05
+1.PNG> <./P_Precision0-1.PNG> <./P_DirectlyFollowedFreq0-08.PNG> <./P_DirectlyF
+ollowedFreq0-025.PNG> <./P_Conformance0-08.PNG> <./P_Precision0-08.PNG> <./P_Co
+nformance0-025.PNG> <./P_Precision0-025.PNG>]
+<P_ConfomGraph0-051.png, id=88, 1253.43282pt x 255.20343pt>
+File: P_ConfomGraph0-051.png Graphic file (type png)
+<use P_ConfomGraph0-051.png>
+Package pdftex.def Info: P_ConfomGraph0-051.png  used on input line 297.
+(pdftex.def)             Requested size: 405.875pt x 82.63638pt.
+<ApprovalDot.PNG, id=89, 960.08687pt x 438.13687pt>
+File: ApprovalDot.PNG Graphic file (type png)
+<use ApprovalDot.PNG>
+Package pdftex.def Info: ApprovalDot.PNG  used on input line 328.
+(pdftex.def)             Requested size: 300.96399pt x 137.34483pt.
 
-Underfull \hbox (badness 2189) in paragraph at lines 267--268
-\T1/cmr/m/n/10 as next ac-tion "P_Cancellation" is per-formed, so is
+Overfull \hbox (27.57452pt too wide) in paragraph at lines 335--338
+\T1/cmr/m/n/10 "P_Returning" (7.099%), "App_Pre_Acceptation" (6.615%), "App_Ini
+tiation" (6.615%), "App_Approving"
  []
 
-[7 <./P_DirectlyFollowedFreq0-025End.PNG>]
-<APP_ApprovedDFG0-3.PNG, id=91, 134.00063pt x 429.605pt>
+
+Overfull \hbox (23.24225pt too wide) in paragraph at lines 335--338
+\T1/cmr/m/n/10 (6.615%), "App_Registration" (6.615%), "App_Finalization" (6.615
+%), "App_Fully_Submission" (6.615%),
+ []
+
+[7 <./P_ConfomGraph0-051.png>]
+<APP_ApprovedDFG0-3.PNG, id=94, 963.09813pt x 432.61626pt>
 File: APP_ApprovedDFG0-3.PNG Graphic file (type png)
 <use APP_ApprovedDFG0-3.PNG>
-Package pdftex.def Info: APP_ApprovedDFG0-3.PNG  used on input line 345.
-(pdftex.def)             Requested size: 64.2623pt x 206.02249pt.
-<APP_CancDFG0-1.PNG, id=92, 148.555pt x 434.12187pt>
+Package pdftex.def Info: APP_ApprovedDFG0-3.PNG  used on input line 368.
+(pdftex.def)             Requested size: 405.875pt x 182.3115pt.
+<ApprovReplay.PNG, id=95, 670.505pt x 54.2025pt>
+File: ApprovReplay.PNG Graphic file (type png)
+<use ApprovReplay.PNG>
+Package pdftex.def Info: ApprovReplay.PNG  used on input line 369.
+(pdftex.def)             Requested size: 405.875pt x 32.81038pt.
+
+Overfull \hbox (17.59549pt too wide) in paragraph at lines 376--377
+\TS1/cmr/m/n/10 \T1/cmr/m/n/10 "App_Pre_Acceptation" \TS1/cmr/m/n/10 \T1/cmr/
+m/n/10 "App_Acceptation". Then there are two events par-al-lel: "App_Finalizati
+on"
+ []
+
+[8 <./ApprovalDot.PNG> <./APP_ApprovedDFG0-3.PNG> <./ApprovReplay.PNG>]
+<CancDot.PNG, id=102, 957.5775pt x 445.16313pt>
+File: CancDot.PNG Graphic file (type png)
+<use CancDot.PNG>
+Package pdftex.def Info: CancDot.PNG  used on input line 389.
+(pdftex.def)             Requested size: 295.42865pt x 137.34483pt.
+
+Overfull \hbox (24.90851pt too wide) in paragraph at lines 396--398
+[]\T1/cmr/m/n/10 There are 11 dif-fer-ent events (rel-a-tive oc-curences): "App
+_Cancellation" (14.323%), "App_Fully_Submission"
+ []
+
+
+Overfull \hbox (32.48999pt too wide) in paragraph at lines 396--398
+\T1/cmr/m/n/10 (14.323%), "App_Incomplete_Submission" (14.323%), "App_Pre_Accep
+tation" (14.315%), "P_Cancellation"
+ []
+
+
+Overfull \hbox (8.55139pt too wide) in paragraph at lines 396--398
+\T1/cmr/m/n/10 (7.572%), "P_Initiation" (7.572%), "P_Sending" (7.572%), "P_Sele
+ction" (7.572%), "App_Acceptation"
+ []
+
+<APP_CancDFG0-1.PNG, id=103, 962.09438pt x 433.11812pt>
 File: APP_CancDFG0-1.PNG Graphic file (type png)
 <use APP_CancDFG0-1.PNG>
-Package pdftex.def Info: APP_CancDFG0-1.PNG  used on input line 350.
-(pdftex.def)             Requested size: 70.50087pt x 206.02249pt.
-<Rej0-1.PNG, id=93, 263.48438pt x 428.09938pt>
+Package pdftex.def Info: APP_CancDFG0-1.PNG  used on input line 424.
+(pdftex.def)             Requested size: 405.875pt x 182.72125pt.
+<CancReplay.PNG, id=104, 784.43062pt x 63.73813pt>
+File: CancReplay.PNG Graphic file (type png)
+<use CancReplay.PNG>
+Package pdftex.def Info: CancReplay.PNG  used on input line 425.
+(pdftex.def)             Requested size: 405.875pt x 32.97964pt.
+
+Overfull \hbox (25.18622pt too wide) in paragraph at lines 432--433
+[]\T1/cmr/m/n/10 All cases start with "App_Fully_Submission" \TS1/cmr/m/n/10 \
+T1/cmr/m/n/10 "App_Incomplete_Submission" \TS1/cmr/m/n/10 \T1/cmr/m/n/10 "App_
+Pre_Acceptation"
+ []
+
+[9 <./CancDot.PNG>]
+<RejDot.PNG, id=109, 955.06813pt x 444.66125pt>
+File: RejDot.PNG Graphic file (type png)
+<use RejDot.PNG>
+Package pdftex.def Info: RejDot.PNG  used on input line 445.
+(pdftex.def)             Requested size: 294.98965pt x 137.34483pt.
+
+Overfull \hbox (6.4408pt too wide) in paragraph at lines 452--454
+[]\T1/cmr/m/n/10 There are 12 dif-fer-ent events (rel-a-tive oc-curences): "App
+_Rejection" (27.17%), "App_Fully_Submission"
+ []
+
+
+Overfull \hbox (3.88586pt too wide) in paragraph at lines 452--454
+\T1/cmr/m/n/10 (27.17%), "App_Incomplete_Submission" (27.17%), "App_Pre_Accepta
+tion" (5.744%), "P_Initiation"
+ []
+
+
+Overfull \hbox (31.60132pt too wide) in paragraph at lines 452--454
+\T1/cmr/m/n/10 (1.997%), "P_Sending" (1.997%), "P_Selection" (1.997%), "App_Acc
+eptation" (1.678%), "App_Finalization"
+ []
+
+[10 <./APP_CancDFG0-1.PNG> <./CancReplay.PNG> <./RejDot.PNG>]
+<Rej0-1.PNG, id=116, 962.09438pt x 433.62pt>
 File: Rej0-1.PNG Graphic file (type png)
 <use Rej0-1.PNG>
-Package pdftex.def Info: Rej0-1.PNG  used on input line 355.
-(pdftex.def)             Requested size: 135.29395pt x 219.83022pt.
-<PropC-Net0-024.PNG, id=94, 742.775pt x 295.60437pt>
-File: PropC-Net0-024.PNG Graphic file (type png)
-<use PropC-Net0-024.PNG>
-Package pdftex.def Info: PropC-Net0-024.PNG  used on input line 369.
-(pdftex.def)             Requested size: 345.11479pt x 137.34483pt.
-<PropC-Net0.PNG, id=95, 740.7675pt x 273.52188pt>
+Package pdftex.def Info: Rej0-1.PNG  used on input line 483.
+(pdftex.def)             Requested size: 405.875pt x 182.93298pt.
+<RejReplay.PNG, id=117, 750.30313pt x 78.2925pt>
+File: RejReplay.PNG Graphic file (type png)
+<use RejReplay.PNG>
+Package pdftex.def Info: RejReplay.PNG  used on input line 484.
+(pdftex.def)             Requested size: 405.875pt x 42.35257pt.
+<PCnet0-05.PNG, id=118, 279.54437pt x 117.43875pt>
+File: PCnet0-05.PNG Graphic file (type png)
+<use PCnet0-05.PNG>
+Package pdftex.def Info: PCnet0-05.PNG  used on input line 502.
+(pdftex.def)             Requested size: 326.92908pt x 137.34483pt.
+<PropC-Net0.PNG, id=119, 740.7675pt x 273.52188pt>
 File: PropC-Net0.PNG Graphic file (type png)
 <use PropC-Net0.PNG>
-Package pdftex.def Info: PropC-Net0.PNG  used on input line 374.
+Package pdftex.def Info: PropC-Net0.PNG  used on input line 507.
 (pdftex.def)             Requested size: 371.96529pt x 137.34483pt.
 
-Overfull \hbox (11.1837pt too wide) in paragraph at lines 374--375
+Overfull \hbox (11.1837pt too wide) in paragraph at lines 507--508
 [][] 
  []
 
-[8 <./APP_ApprovedDFG0-3.PNG> <./APP_CancDFG0-1.PNG> <./Rej0-1.PNG>])
-(Questions.tex) (Conclusion.tex) [9 <./PropC-Net0-024.PNG> <./PropC-Net0.PNG>]
-[10] (Assignment2.aux)
+[11 <./Rej0-1.PNG> <./RejReplay.PNG>]
+<AppWorkDot.PNG, id=125, 949.5475pt x 442.15187pt>
+File: AppWorkDot.PNG Graphic file (type png)
+<use AppWorkDot.PNG>
+Package pdftex.def Info: AppWorkDot.PNG  used on input line 554.
+(pdftex.def)             Requested size: 360.78159pt x 167.99246pt.
+ [12 <./PCnet0-05.PNG> <./PropC-Net0.PNG>]
+Overfull \hbox (62.12164pt too wide) in paragraph at lines 561--563
+[]\T1/cmr/m/n/10 The data set has 29 events (oc-curence rel-a-tive): "W_Complet
+e_Application" (10.377%), "W_Complete_Application"
+ []
+
+
+Overfull \hbox (125.66168pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 "App_Incomplete_Submission" (5.666%), "W_Handeling_Incomplete_Do
+ssiers" (4.939%), "W_Handeling_Incomplete_Dossiers"
+ []
+
+
+Overfull \hbox (83.81079pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 (4.936%), "W_Validation" (3.418%), "W_Validation" (3.417%), "App
+_Rejection" (3.306%), "W_Complete_Application"
+ []
+
+
+Overfull \hbox (13.328pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 (3.192%), "App_Pre_Acceptation" (3.19%), "W_Quotations" (2.872%)
+, "W_Handling_Leads" (2.554%),
+ []
+
+
+Overfull \hbox (38.794pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 "W_Handling_Leads" (2.553%), "App_Acceptation" (2.214%), "W_Vali
+dation" (2.175%), "App_Finalization"
+ []
+
+
+Overfull \hbox (48.70825pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 (2.171%), "W_Handling_Leads" (2.066%), "App_Cancellation" (1.215
+%), "W_Handeling_Incomplete_Dossiers"
+ []
+
+
+Overfull \hbox (85.06049pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 (1.032%), "App_Initiation" (0.972%), "App_Approving" (0.972%), "
+App_Registration" (0.972%), "W_Fraud_Detection"
+ []
+
+
+Overfull \hbox (58.76135pt too wide) in paragraph at lines 561--563
+\T1/cmr/m/n/10 (0.117%), "W_Fraud_Detection" (0.117%), "W_Fraud_Detection" (0.0
+54%) and "W_Changing_Contact_Details"
+ []
+
+) (Questions.tex
+Overfull \hbox (29.40741pt too wide) in paragraph at lines 568--1
+\T1/cmr/m/n/10 (14.816%), "W_Quotations" (9.895%), "App_Cancellation" (7.091%),
+ "W_Handeling_Incomplete_Dossiers"
+ []
+
+
+Overfull \hbox (12.8559pt too wide) in paragraph at lines 568--1
+\T1/cmr/m/n/10 (3.454%), "W_Fraud_Detection" (0.436%), "W_Changing_Contact_Deta
+ils" (0.031%), "W_Validation"
+ []
+
+) (Conclusion.tex) [13 <./AppWorkDot.PNG>] (Assignment2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36718 strings out of 493305
- 832248 string characters out of 3126321
- 844799 words of memory out of 3000000
- 39736 multiletter control sequences out of 15000+200000
+ 36755 strings out of 493305
+ 832740 string characters out of 3126321
+ 843831 words of memory out of 3000000
+ 39765 multiletter control sequences out of 15000+200000
  551451 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,80p,1650b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1858,9 +2011,9 @@ Users\Miriam Wagner\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Miriam Wagner\AppData\Local\MiKTeX\2.
 9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Miriam Wagner\AppDa
 ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk>
-Output written on Assignment2.pdf (10 pages, 1920832 bytes).
+Output written on Assignment2.pdf (13 pages, 3016074 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
+ 400 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 
