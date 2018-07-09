@@ -1,5 +1,15 @@
 \section{Introduction}
-In this assignment I have to analyze for a fictional financial institute data and make suggestions 
+In this assignment I have to analyze for a financial institute data and make suggestions for the company. The event log is taken from the information system while it is running. 
+
+All researches were done with ProM as ecpected from us. The data contains three types of activities (taken from the Assignment):
+
+\begin{enumerate}
+	\item Event names that start with "App\_" refer to status changes of applications. People make applications for a loan online.
+	\item Event names that start with "P\_" refer to status changes of proposals, i.e. if the financial institute sees an opportunity to sell a loan to a customer, a proposal is sent to the customer.
+	\item Events that start with "W\_" refer to activities performed by employees in the process, for example the call-center employees
+\end{enumerate}
+
+The data is analyzed in different steps to get a better idea of the process.
 
 \section{General insights about the data set}
 
@@ -15,6 +25,8 @@ All processes start in "App\_Fully\_Submission + COMPLETE" (100.0\%).
 The processes can end in 13 different events:
 
 "App\_Rejection + COMPLETE" (26.202\%), "W\_Validation + COMPLETE" (20.975\%), "W\_Handling\_Leads + COMPLETE" (17.07\%), "W\_Complete\_Application + COMPLETE" (14.816\%), "W\_Quotations + COMPLETE" (9.849\%), "App\_Cancellation + COMPLETE" (5.005\%), "W\_Handeling\_Incomplete\_Dossiers + COMPLETE" (3.454\%), "P\_Cancellation + COMPLETE" (2.132\%), "W\_Fraud\_Detection + COMPLETE" (0.436\%), "W\_Changing\_Contact\_Details + SCHEDULE" (0.031\%), "W\_Validation + START" (0.015\%), "App\_Registration + COMPLETE" (0.008\%) and "W\_Quotations + START" (0.008\%).
+
+What you already see here, is that the process not always ended. All the process ending with a start event are probably not done now. This was to expected, because the data is picked during the running process.
 
 
 \begin{figure}[!htbp]
