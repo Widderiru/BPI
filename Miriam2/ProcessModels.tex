@@ -1,9 +1,10 @@
 \section{Process Models}
 %Providing process models is not enough because the process owner is diffident with any result which he/she is simply provided with. Therefore, he/she wants evidence of the goodness of these models. For this purpose, you should perform alignment-based conformance checking. Using the result of the conformance checker, you should motivate why the chosen models are better that any possible alternative (e.g. because of mediating fitness, precision, generalization and simplicity). For each model, also provide its textual description. 
+In the first part I will give different models there conformances. In the end I will have a look at the bottlenecks and give first recommendations.
 
-\subsection{Exploring process}
+\subsection{Steps for exploring the models}
 
-For exploring a good model of a data set I first filtered the data with the (\textbf{Filter log on event attribute names}) tool for extracting the required. Then I used \textbf{Interactive data heuristic miner} and \textbf{Inductive Miner} on the filtered data set to discover different models. After comparing the outcomes I decided to concentrate on \textbf{Interactive data heuristic miner} and their directly followed graphs and petri nets for understanding the lifecycle. I think the petri net is the best with basic configuration and just different frequency filters. The conformance checking where done with \textbf{Replay a log on Petri Net for conformance analysis} tool on the petri net and the filtered data. For the precision check I applied the \textbf{Multi-perspective Process Explorer} tool on the petri net and the filtered data and chose "show precision mode" in the tool with basic configuration.
+For exploring a good model of a data set I first filtered the data with the \textbf{Filter log on event attribute names} tool for extracting the required. Then I used \textbf{Interactive data heuristic miner} and \textbf{Inductive Miner} on the filtered data set to discover different models. After comparing the outcomes I decided to concentrate on \textbf{Interactive data heuristic miner} and their directly followed graphs and petri nets for understanding the lifecycle. I think the petri net is the best with basic configuration and just different frequency filters. The conformance checking where done with \textbf{Replay a log on Petri Net for conformance analysis} tool on the petri net and the filtered data. For the precision check I applied the \textbf{Multi-perspective Process Explorer} tool on the petri net and the filtered data and chose "show precision mode" in the tool with basic configuration.
 
 \subsection{Application data set}
 %filter on event names
@@ -16,7 +17,7 @@ Just the events beginning with "App\_..." are required. The resulting data set i
 
 The data set is collected between the 1st of 0ct 2011 (Saturday), 00:38:44 and the 14th of Mar 2012 (Wednesday), 15:33:57. It contains 13087 cases with 60849 executed events.
 
-10 different events appear (occurences relative), all events are complete so I deleted this extra information: "App\_Fully\_Submission" (21.507\%), "App\_Incomplete\_Submission" (21.507\%), "App\_Rejection" (12.547\%), "App\_Pre\_Acceptation" (12.107\%), "App\_Acceptation" (8.403\%), "App\_Finalization" (8.242\%), "App\_Cancellation" (4.613\%), "App\_Initiation" (3.691\%), "App\_Approving" (3.691\%) and "App\_Registration" (3.691\%). Just "APP\_Fully\_Submission" appears to be a start event. However there are 8 end events possible: "App\_Rejection" (58.34\%), "App\_Cancellation" (21.449\%), "App\_Initiation" (8.573\%), "App\_Registration" (6.014\%), "App\_Approving" (2.575\%), "App\_Finalization" (2.499\%), "App\_Pre\_Acceptation" (0.527\%) and "App\_Acceptation" (0.023\%).
+10 different events appear (occurences relative), all events are complete so I deleted this extra information: "App\_Fully\_ Submission" (21.507\%), "App\_Incomplete\_Submission" (21.507\%), "App\_Rejection" (12.547\%), "App\_Pre\_Acceptation" (12.107\%), "App\_Acceptation" (8.403\%), "App\_Finalization" (8.242\%), "App\_Cancellation" (4.613\%), "App\_Initiation" (3.691\%), "App\_Approving" (3.691\%) and "App\_Registration" (3.691\%). Just "APP\_Fully\_Submission" appears to be a start event. However there are 8 end events possible: "App\_Rejection" (58.34\%), "App\_Cancellation" (21.449\%), "App\_Initiation" (8.573\%), "App\_Registration" (6.014\%), "App\_Approving" (2.575\%), "App\_Finalization" (2.499\%), "App\_Pre\_Acceptation" (0.527\%) and "App\_Acceptation" (0.023\%).
 
 
 A trace contains maximal 8 different events and minimal 3. The mean is 4.65. In total there are 17 different variants of traces. 
@@ -305,6 +306,60 @@ Like for approved and proposal I first checked different frequency filter settin
 
 \begin{figure}[!htbp]
 \centering
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovConf0.PNG}
+  \caption{Conformance for 0 as frequency filter}
+  \label{fig:ApprovCon0-1}
+\end{subfigure}%
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovConf0-1.PNG}
+  \caption{Conformance for 0.1 as frequency filter}
+  \label{fig:ApprovCon0-1}
+\end{subfigure}
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovConf0-2.PNG}
+  \caption{Conformance for 0.2 as frequency filter}
+  \label{fig:ApprovCon0-2}
+\end{subfigure}%
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovConf0-3.PNG}
+  \caption{Conformance for 0.3 as frequency filter}
+  \label{fig:ApprovCon0-3}
+\end{subfigure}
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovPrec0.PNG}
+  \caption{Precision for 0 as frequency filter}
+  \label{fig:ApprovPrec0-1}
+\end{subfigure}%
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovPrec0-1.PNG}
+  \caption{Precision for 0.1 as frequency filter}
+  \label{fig:ApprovPrec0-1}
+\end{subfigure}
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovPrec0-2.PNG}
+  \caption{Precision for 0.2 as frequency filter}
+  \label{fig:ApprovPrec0-2}
+\end{subfigure}%
+\begin{subfigure}{.24\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{ApprovPrec0-3.PNG}
+  \caption{Precision for 0.3 as frequency filter}
+  \label{fig:ApprovPrec0-3}
+\end{subfigure}
+\caption{Conformance and precision checking}
+\label{fig:ApprovCheck}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
 \begin{tabular}{c|c|c|c|c|}
 \cline{2-5}
 & \multicolumn{4}{ c| }{Frequency} \\ \cline{2-5}
@@ -318,7 +373,7 @@ Like for approved and proposal I first checked different frequency filter settin
 \label{tab:ApprovRe}
 \end{figure}
 
-Based on the results, \ref{tab:ApprovRe}, I chose the model with 0.3 filtering. This one has a high simplicity, but still has surprisingly good results.
+Based on the results, \ref{tab:ApprovRe} or detailed in \ref{fig:ApprovCheck}, I chose the model with 0.3 filtering. This one has a high simplicity, but still has surprisingly good results.
 %TODO Maybe all together
 
 \textbf{Discussion of the model}
@@ -333,7 +388,7 @@ Based on the results, \ref{tab:ApprovRe}, I chose the model with 0.3 filtering. 
 
 In figure \ref{fig:ApprovModel} the petri net and the result of the replat can be seen. It is hard to clearly read the details, but I describe it in detail here. 
 
-All 301 cases start with the same 4 events: "App\_Fully\_Submission" \textrightarrow "App\_Incomplete\_Submission" \textrightarrow "App\_Pre\_Acceptation" \textrightarrow "App\_Acceptation". Then there are two events parallel: "App\_Finalization" and "P\_Selection". Before and after those actions are events skipped in the model, that occur in the original log. Afterwards "P\_Initiation" \textrightarrow "P\_Sending" \textrightarrow "P\_Returning" are executed in all cases. Again 3 events are parallel "App\_Registration", "App\_Registration" (just in 300 cases and "App\_Initiation". The last event is "App\_Approving".
+All 301 cases start with the same 4 events: "App\_Fully\_Submission" \textrightarrow "App\_Incomplete\_Submission" \textrightarrow "App\_Pre\_ Acceptation" \textrightarrow "App\_Acceptation". Then there are two events parallel: "App\_Finalization" and "P\_Selection". Before and after those actions are events skipped in the model, that occur in the original log. Afterwards "P\_Initiation" \textrightarrow "P\_Sending" \textrightarrow "P\_Returning" are executed in all cases. Again 3 events are parallel "App\_Registration", "App\_Registration" (just in 300 cases and "App\_Initiation". The last event is "App\_Approving".
 
 When I controlled the time matrix for the transitions I saw, that there are a lot of transitions taking place between 12 and 16 days.
 
@@ -351,7 +406,7 @@ The data set is collected between the 1st of 0ct 2011 (Saturday), 09:45:25 and t
 \label{fig:CancTimeFlow}
 \end{figure}
 
-In figure \ref{fig:CancTimeFlow} the corresponding dotted chart can be seen. On every sunday there are just two events executed "App\_Pre\_Acceptation" and "App\_Incomplete\_Submission". Furthermore in the left lower corner the following information can be found: the average duration of a case is, 16 days 22 hours 23 minutes and 7.31 seconds, the minimal duration, 1 minute and 5.067 seconds, and the maximum duration, 90 days 3 hours 48 minutes and 38.29 seconds. All three values are given in milliseconds in the figure.
+In figure \ref{fig:CancTimeFlow} the corresponding dotted chart can be seen. On every sunday there are just two events executed "App\_Pre\_ Acceptation" and "App\_Incomplete\_Submission". Furthermore in the left lower corner the following information can be found: the average duration of a case is, 16 days 22 hours 23 minutes and 7.31 seconds, the minimal duration, 1 minute and 5.067 seconds, and the maximum duration, 90 days 3 hours 48 minutes and 38.29 seconds. All three values are given in milliseconds in the figure.
 
 There are 11 different events (relative occurences):
 "App\_Cancellation" (14.323\%), "App\_Fully\_Submission" (14.323\%), "App\_Incomplete\_Submission" (14.323\%), "App\_Pre\_Acceptation" (14.315\%), "P\_Cancellation" (7.572\%), "P\_Initiation" (7.572\%), "P\_Sending" (7.572\%), "P\_Selection" (7.572\%), "App\_Acceptation" (6.182\%), "App\_Finalization" (5.694\%) and "P\_Returning" (0.555\%). There are 46 different variants of traces.
@@ -362,6 +417,49 @@ A maximum of 32 events is executed in a case and minimal 3. The mean of events p
 
 
 \textbf{Discover and evaluate models of lifecycle with Endstate APP\_Cancelled}
+
+\begin{figure}[!htbp]
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{CancConf0.PNG}
+  \caption{Conformance for 0 as frequency filter}
+  \label{fig:CancCon0}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{CancConf0-1.PNG}
+  \caption{Conformance for 0.1 as frequency filter}
+  \label{fig:CancCon0-1}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{CancConf0-49.PNG}
+  \caption{Conformance for 0.49 as frequency filter}
+  \label{fig:CancCon0-2}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{CancPrec0.PNG}
+  \caption{Precision for 0 as frequency filter}
+  \label{fig:CancPrec0}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{CancPrec0-1.PNG}
+  \caption{Precision for 0.1 as frequency filter}
+  \label{fig:CancPrec0-1}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{CancPrec0-49.PNG}
+  \caption{Precision for 0.49 as frequency filter}
+  \label{fig:CancPrec0-2}
+\end{subfigure}%
+\caption{Conformance and precision checking}
+\label{fig:CancCheck}
+\end{figure}
+
 
 \begin{figure}[!htbp]
 \centering
@@ -377,7 +475,7 @@ A maximum of 32 events is executed in a case and minimal 3. The mean of events p
 \caption{Results for cancelled as endstate}
 \label{tab:CancRe}
 \end{figure}
-Like for APP\_Approved I checked different configurations and based on the results, \ref{tab:CancRe}, I decided to pick 0.1 filtered frequency model. The fitness and precision is still higher than 90\%, but it is also the most simpel model.
+Like for APP\_Approved I checked different configurations and based on the results, \ref{tab:CancRe} in more detail \ref{fig:CancCheck}, I decided to pick 0.1 filtered frequency model. The fitness and precision is still higher than 90\%, but it is also the most simpel model.
 
 \textbf{Discussion of the model}
 
@@ -412,7 +510,7 @@ The data set was collected between the 1st of 0ct 2011 (saturday), 08:11:08 and 
 In figure \ref{fig:RejTimeFlow} the dotted chart can be seen. On every sunday there are just two events executed "App\_Rejection" and "App\_Incomplete\_Submission". Furthermore in the left lower corner the following information can be found: the average duration of a case is, 1 days 6 hours 50 minutes and 35.01 seconds, the minimal duration, 1.855 seconds, and the maximum duration, 76 days 22 hours 42 minutes and 38.05 seconds. All three values are given in milliseconds in the figure.
 
 There are 12 different events (relative occurences):
-"App\_Rejection" (27.17\%), "App\_Fully\_Submission" (27.17\%), "App\_Incomplete\_Submission" (27.17\%), "App\_Pre\_Acceptation" (5.744\%), "P\_Initiation" (1.997\%), "P\_Sending" (1.997\%), "P\_Selection" (1.997\%), "App\_Acceptation" (1.678\%), "App\_Finalization" (1.57\%), "P\_Rejection" (1.57\%), "P\_Returning" (1.51\%), "P\_Cancellation" (0.427\%). There are 30 different variants of traces.
+"App\_Rejection" (27.17\%), "App\_Fully\_Submission" (27.17\%), "App\_ Incomplete\_Submission" (27.17\%), "App\_Pre\_Acceptation" (5.744\%), "P\_Initiation" (1.997\%), "P\_Sending" (1.997\%), "P\_Selection" (1.997\%), "App\_Acceptation" (1.678\%), "App\_Finalization" (1.57\%), "P\_Rejection" (1.57\%), "P\_Returning" (1.51\%), "P\_Cancellation" (0.427\%). There are 30 different variants of traces.
 
 All traces start with "App\_Fully\_Submission"
 
@@ -422,6 +520,48 @@ A maximum of 12 events is executed in a case and minimal 3. The mean of events p
 \textbf{Discover and evaluate models of lifecycle with Endstate APP\_Rejected}
 
 The last analysis is of the models ending in APP\_Rejected. In the first step I checked different frequency filters and decided based on simplicity and traceability I had to take a closer look at 0, 0.025 and 0.1.
+
+\begin{figure}[!htbp]
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{RejCon0.PNG}
+  \caption{Conformance for 0 as frequency filter}
+  \label{fig:RejCon0}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{RejCon0-025.PNG}
+  \caption{Conformance for 0.025 as frequency filter}
+  \label{fig:RejCon0-025}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{RejCon0-1.PNG}
+  \caption{Conformance for 0.1 as frequency filter}
+  \label{fig:RejCon0-1}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{RejPrec0.PNG}
+  \caption{Precision for 0 as frequency filter}
+  \label{fig:RejPrec0}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{RejPre0-025.PNG}
+  \caption{Precision for 0.025 as frequency filter}
+  \label{fig:RejPrec0-025}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{RejPrec0-1.PNG}
+  \caption{Precision for 0.1 as frequency filter}
+  \label{fig:RejPrec0-1}
+\end{subfigure}%
+\caption{Conformance and precision checking}
+\label{fig:RejCheck}
+\end{figure}
 
 \begin{figure}[!htbp]
 \centering
@@ -438,9 +578,10 @@ The last analysis is of the models ending in APP\_Rejected. In the first step I 
 \label{tab:RejRe}
 \end{figure}
 
-Based on \ref{tab:RejRe} I chose 0.1 filtered frequency model as the best. It is really easy to follow and has a good fitness.
+Based on \ref{tab:RejRe}, detailed in figure \ref{fig:RejCheck}, I chose 0.1 filtered frequency model as the best. It is really easy to follow and has a good fitness.
 
 \textbf{Discussion of the model}
+
 
 \begin{figure}[!htbp]
 \centering
@@ -463,20 +604,21 @@ Based on the results of my analysis of the model before I chose the same frequen
 \begin{figure}[!htbp]
 \centering
 \begin{subfigure}{0.3\textwidth}
-\includegraphics[height = 0.2\textheight]{PCnet0-2.PNG}
+\includegraphics[width = 0.9\linewidth]{PCnet0-2.PNG}
 \caption{C-net with 0.2 filtered frequency}
 \label{fig:cnetP0-2}
 \end{subfigure}
-\begin{subfigure}{0.7\textwidth}
-\includegraphics[height = 0.2\textheight]{PropC-Net0.PNG}
-\caption{C-net without filtered frequency}
+\begin{subfigure}{0.6\textwidth}
+\includegraphics[width = 0.9\linewidth]{PropC-Net0.PNG}
+\includegraphics[width=0.9\textwidth]{PropC-Net0-151.PNG}
+\caption{C-net without filtered frequency and with 0.151 filtering}
 \label{fig:cnetP0}
 \end{subfigure}
 \caption{C-Nets of the proposal process}
 \label{fig:cNetP}
 \end{figure}
 
-In figure \ref{fig:cNetP} I show two C-nets of the proposal process for comparsion. \ref{fig:cnetP0-2} is the one I picked and I will discuss in detail. In \ref{fig:cnetP0} the original C-net of the process is to see and obviously it is much more complicated and not so intuitive than the filtered one. 
+In figure \ref{fig:cNetP} I show three C-nets of the proposal process for comparsion. \ref{fig:cnetP0-2} is the one I picked and I will discuss in detail. In \ref{fig:cnetP0} the original C-net of the process is to see and obviously it is much more complicated and not so intuitive than the filtered one. Just for comparsion I also checked the 0.151 filtered c-net and there you can see, that in real data a loop can be found between Sending, Cancellation, Initiation and Selection. So this behaviour makes the processes probably slower.
 
 \subsubsection{Analysis of the C-net}
 For simplicity reasons I will not write "P\_" as prefix of every activity.
@@ -498,31 +640,11 @@ All trace possibilities:
 
 These 5 pathes are also what you would expect a little bit, but you clearly see, that there are missing details. But depending on the further results those pathes are the main pathes.
 
-\subsubsection{Extra C-net}
-
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=0.9\textwidth]{PropC-Net0-151.PNG}
-\caption{C-net with 0.151 filtered frequency}
-\label{fig:cnet0-151}
-\end{figure}
-
-Just for comparsion I also checked the 0.151 filtered c-net and there you can see, that in real data a loop can be found between Sending, Cancellation, Initiation and Selection. So this behaviour makes the processes probably slower.
 
 \subsection{Own Petri net of the proposal process}
 %Based on your analysis, create a Petri net of the proposal process by your own. For example, do not consider infrequent paths and also outlier behaviors. 
-Based on my analysis of the C-net and also the petri net.The first problem I saw, was that the start event can occur in between again. Because of that you have a deadlock if you would build it without transitions, that can occur more than once. Also the cancellation and selection or just cancellation or split makes problems. 
 
-Then just checking the different variants and the occurences I found out, that already just the traces occur at least 1\% of the time have "P\_Selection" as start state and as in between state. So I decided just to emphasize the main three main variants. I think this is the behaviour as it should be.
-
-The traces that I considered were:
-
-"P\_Selection"\textrightarrow "P\_Intiation" \textrightarrow "P\_Sending"\textrightarrow
-\begin{itemize}
-	\item "P\_Returning" \textrightarrow "P\_Acceptation" (1.537 cases, 11.74\%)
-	\item "P\_Returning" \textrightarrow "P\_Rejection" (1.132 cases, 8.65\%)
-	\item "P\_Cancellation" (574 cases, 4.39\%)
-\end{itemize}
+Based on the petri-net I chose I constructed the following petri-net, which also reflects the process I would expect.
 
 
 \begin{figure}[!htbp]
@@ -596,14 +718,13 @@ The data set is collected between the 1st of 0ct 2011 (saturday), 00:38:44 and t
 In figure \ref{fig:AppWorkTimeFlow} the dotted chart can be seen. Having a closer look at this I saw again gaps on sunday. On sundays just "App\_Incomplete\_Submission" and "App\_Rejection" is been executed. Furthermore is in the left below corner to see what is the average duration of a case, 8 days 14 hours 58 minutes and 20.10 seconds, the minimum duration, 13.087 seconds, and the maximum duration, 137 days 5 hours 18 minutes and 56.01 seconds. Both is given in milliseconds.
 
 The data set has 29 events (occurence relative): 
-"W\_Complete\_Application" (10.377\%), "W\_Complete\_Application" (10.18\%), "W\_Quotations" (9.948\%), "W\_Quotations" (9.701\%), "App\_Fully\_Submission" (5.666\%), "App\_Incomplete\_Submission" (5.666\%), "W\_Handeling\_Incomplete\_Dossiers" (4.939\%), "W\_Handeling\_Incomplete\_Dossiers" (4.936\%), "W\_Validation" (3.418\%), "W\_Validation" (3.417\%), "App\_Rejection" (3.306\%), "W\_Complete\_Application" (3.192\%), "App\_Pre\_Acceptation" (3.19\%), "W\_Quotations" (2.872\%), "W\_Handling\_Leads" (2.554\%), "W\_Handling\_Leads" (2.553\%), "App\_Acceptation" (2.214\%), "W\_Validation" (2.175\%), "App\_Finalization" (2.171\%), "W\_Handling\_Leads" (2.066\%), "App\_Cancellation" (1.215\%), "W\_Handeling\_Incomplete\_Dossiers" (1.032\%), "App\_Initiation" (0.972\%), "App\_Approving" (0.972\%), "App\_Registration" (0.972\%), "W\_Fraud\_Detection" (0.117\%), "W\_Fraud\_Detection" (0.117\%), "W\_Fraud\_Detection" (0.054\%) and "W\_Changing\_Contact\_Details" (0.005\%).
+"W\_Complete\_Application + COMPLETE" (10.377\%), "W\_Complete\_ Application + START" (10.18\%), "W\_Quotations + COMPLETE" (9.948\%), "W\_Quotations + START" (9.701\%), "App\_Fully\_Submission + COMPLETE" (5.666\%), "App\_Incomplete\_Submission + COMPLETE" (5.666\%), "W\_Handeling\_ Incomplete\_Dossiers + COMPLETE" (4.939\%), "W\_Handeling\_Incomplete\_Dossiers + START" (4.936\%), "W\_Validation + COMPLETE" (3.418\%), "W\_Validation + START" (3.417\%), "App\_Rejection + COMPLETE" (3.306\%), "W\_Complete\_ Application + SCHEDULE" (3.192\%), "App\_Pre\_Acceptation + COMPLETE" (3.19\%), "W\_Quotations + SCHEDULE" (2.872\%), "W\_Handling\_Leads + COMPLETE" (2.554\%), "W\_Handling\_Leads + START" (2.553\%), "App\_Acceptation + COMPLETE" (2.214\%), "W\_Validation + SCHEDULE" (2.175\%), "App\_Finalization + COMPLETE" (2.171\%), "W\_Handling\_Leads + SCHEDULE" (2.066\%), "App\_Cancellation + COMPLETE" (1.215\%), "W\_Handeling\_Incomplete\_ Dossiers + SCHEDULE" (1.032\%), "App\_Initiation + COMPLETE" (0.972\%), "App\_Approving + COMPLETE" (0.972\%), "App\_Registration + COMPLETE" (0.972\%), "W\_Fraud\_Detection + COMPLETE" (0.117\%), "W\_Fraud\_Detection + START" (0.117\%), "W\_Fraud\_Detection + SCHEDULE" (0.054\%), "W\_Changing\_Contact\_Details + SCHEDULE" (0.005\%)
 
-There are 3668 different variants of traces.
-
-Maximal 162 events are executed in a case and minimal 3. The mean of events per class is 17.648.
+There are 3668 different variants of traces. Maximal 162 events are executed in a case and minimal 3. The mean of events per class is 17.648.
 
 All cases start with "App\_Fully\_Submission", but there are 12 different outcomes: 
-"App\_Rejection" (26.202\%), "W\_Validation" (20.975\%), "W\_Handling\_Leads" (17.07\%), "W\_Complete\_Application" (14.816\%), "W\_Quotations" (9.895\%), "App\_Cancellation" (7.091\%), "W\_Handeling\_Incomplete\_Dossiers" (3.454\%), "W\_Fraud\_Detection" (0.436\%), "W\_Changing\_Contact\_Details" (0.031\%), "W\_Validation" (0.015\%), "App\_Registration" (0.008\%) and "W\_Quotations" (0.008\%).
+"App\_Rejection + COMPLETE" (26.202\%), "W\_Validation + COMPLETE" (20.975\%), "W\_Handling\_Leads + COMPLETE" (17.07\%), "W\_Complete\_ Application + COMPLETE" (14.816\%), "W\_Quotations + COMPLETE" (9.895\%), "App\_Cancellation + COMPLETE" (7.091\%), "W\_Handeling\_Incomplete\_Dossiers + COMPLETE" (3.454\%), "W\_Fraud\_Detection + COMPLETE" (0.436\%), "W\_Changing\_Contact\_Details + SCHEDULE" (0.031\%), "W\_Validation + START" (0.015\%), "App\_Registration + COMPLETE" (0.008\%), "W\_Quotations + START" (0.008\%). The processes, which end with a started or sheduled event, are part of a not ending cases. Those appear so unfrequent, that they will not have further influence.
+
 
 \subsubsection{Bottlenecks of the workflow-net}
 Using the \textbf{Mine with inductive visual miner} I first explored the workflow process. The configuration were changed to 100\% of the pathes and show paths and sojourn time in the first step.
@@ -644,7 +765,7 @@ As to see in figure \ref{fig: AppSojuComp} the most events are done pretty fast,
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width = 0.9\textwidth]{AppSojuProb.PNG}
+\includegraphics[width = 0.7\textwidth]{AppSojuProb.PNG}
 \caption{Zoomed in application net with sojourn time}
 \label{fig: AppSojuCompProb}
 \end{figure}

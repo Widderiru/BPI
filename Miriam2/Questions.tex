@@ -123,6 +123,29 @@ Figure \ref{fig:CnetRej} shows the whole c-net and in \ref{fig:CnetRejZoome} it 
 
 Figure \ref{fig:CnetCanc} shows the whole c-net and in \ref{fig:CnetCancZoome} it is more clear, that again \textbf{112} starts all traces.
 
+\subsubsection{Control result with decision tree}
+
+To be completly sure about those results I exported the data as .csv file and imported them in RapidMiner. 
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width =0.7\textwidth]{Decision.PNG}
+\caption{RapidMiner Process for mining a decision tree}
+\label{fig:dec}
+\end{figure}
+
+The process I used is to see in figure \ref{fig:dec}. I retrieved the data selected just the event and amount attributed and filtered different possible outcomes. Mostly I concentrated on "App\_Apprpoving" and "App\_Rejection". The event was set as outcome and therefore a decision tree was mined. Hoewel I tried a lot of different configurations I always received as decision tree, that I always have to choose "App\_Rejection". Most of the times it was independent of the requested amount and just this decision. The best other decision tree was for max depth 2 and no pruning.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.4\textwidth]{AmoutReqDec.PNG}
+\includegraphics[width=0.4\textwidth]{AmoutReqDec2.PNG}
+\caption{Decision trees}
+\label{fig:DecTre}
+\end{figure}
+
+The resulted decision trees, figure \ref{fig:DecTre}, made clear, that there is no corrleation between events and the requested amount.
+
 \subsubsection{Summary of those results}
 
 So what gets pretty clear is that \textbf{112} decides over the next steps in the beginning. Having a look at the resources following it gets obvious, that different ressources work on the 3 sorts of traces. So it seems to depend on 112, which decision will be made.
@@ -151,4 +174,4 @@ Rejected of cancelled  & $1855$ & $5.613*10^8$ & $7901736161$       \\ \cline{1-
 \label{tab:Throughtimes}
 \end{figure}
 
-In figure \ref{tab:Throughtimes} it can be clearly seen, that an approved traces takes 2.56 times so much time, than a rejected or cancelled trace. 
+In figure \ref{tab:Throughtimes} it can be clearly seen, that an approved traces takes 2.56 time so much time, than a rejected or cancelled trace. 
